@@ -1,0 +1,38 @@
+// 형 변환 예제 (Number)
+// Number는 정수와 실수를 모두 포함하는 자료형 변환이므로, 정수 혹은 실수의 명시적 변환은 parse 함수 사용
+// 정수 변환: parseInt(피연산자), 실수 변환: parseFloat(피연산자)
+
+console.log(Number("")); // output: 0
+console.log(Number("123")); // output: 123
+console.log(Number("hello")); // output: NaN
+console.log(Number("123hello")); // output: NaN
+console.log(Number(true)); // output: 1
+console.log(Number(false)); // output: 0
+console.log(Number(null)); // output: 0
+console.log(Number(undefined)); // output: NaN
+
+console.log(parseInt("123.123")); // output: 123
+console.log(parseFloat("123.123")); // output: 123.123
+
+// 형 변환 예제 (String)
+console.log(String(123));  // 123
+console.log(String(1 / 0));  // Infinity
+console.log(String(-1 / 0));  // -Infinity
+console.log(String(NaN));     // NaN
+console.log(String(true));  // true
+console.log(String(false)); // false
+console.log(String(null));  // null
+console.log(String(undefined)); // undefined
+console.log(String("haha")); // haha
+
+
+// 형 변환 예제 (Boolean)
+console.log(Boolean(""));  // output: false 
+console.log(Boolean("123"));  // output: true
+console.log(Boolean("hello"));  // output: true
+console.log(Boolean("0"));  // output: true
+console.log(Boolean(0));  // output: false
+console.log(Boolean(123));  // output: true
+console.log(Boolean(NaN));  // output: false
+console.log(Boolean(null));  // output: false
+console.log(Boolean(undefined));  // output: false
