@@ -1,0 +1,77 @@
+// typeof 인수의 자료형을 반환하는 연산자 
+console.log(typeof undefined); // output: undefined
+console.log(typeof 123); // output: number
+console.log(typeof 456n); // output: bigint
+console.log(typeof true); // output: boolean
+console.log(typeof "hello"); // output: string 
+console.log(typeof Symbol("id")); // output: symbol
+console.log(typeof Math); // output: object
+console.log(typeof null); // output: object
+console.log(typeof console.log); // output: function
+
+
+/* boolean은 논리적인 값을 표현하는 자료형 
+   참인 true와 거짓인 false, 두 가지 값만 존재
+   주로 조건문 등에서 동작 판단의 기준으로 사용됨
+*/
+
+let name_check = true; // 이름을 입력 확인여부 변수에 true 라는 값을 저장 
+let age_check = false; // 나이 입력 확인여부 변수에 false 라는 값을 저장 
+
+let value_check = 10 > 3; // 값 비교 결과 변수에 10 > 3 것은 사실이니 참 > ture 값을 저장 
+// 값 비교 결과 변수를 출력 
+console.log(value_check); // output: true
+
+
+/* null은 값이 비어 있다는 의미로 표현되는 자료형 
+   존재하지 않는 (nothing), 비어있는(empty), 알 수 없는(unknown) 값을 나타내는데 사용 
+*/
+
+console.log(typeof null); // output: object < 하위버전 호완성을 위해 object 표시
+
+const null_check = null; 
+console.log(null_check === null); // output: true
+
+/* undefined는 값이 할당되어 있지 않은 상태를 나타낼 때 사용되는 자료형 
+   변수 선언 후 초기화 하지 않는다면, undefined가 자동으로 할당 
+*/
+
+let name; // 변수 선언후 초기화를 하지 않음
+
+console.log(name);  // output: undefined
+
+
+/* number(숫자형)은 정수 부동소수점 (floating point) 숫자르 표현하는 자료형
+   number와 관련된 연산은 사칙연산(+,-,*,/)가 대표적 
+   number에는 일반적인 숫자 외에 Infinity, -Infinity, NaN(Not a Number) 같은 특수 숫자 값이 포함
+   number에서는 2^52 - 1 보다 큰 값을 사용할 수 없으며, 더 큰 정수를 다루고 싶은경우 bigint 자료형 사용 필요
+*/
+
+let num_1 = 123.0;
+let num_2 = 123.456;
+let num_3 = 1 / 0;
+let num_4 = 123456n; // BigInt("123456")
+
+console.log(num_1 - num_2); // output: -0.45600000000000307
+console.log((num_1 - num_2).toFixed(3)); // output: -0.456
+console.log(num_3); // Infinity 
+console.log(num_1 / "hello"); // NaN
+console.log(typeof num_4); // bigint
+
+
+/* string은 문자, 문자열을 표현하는 자료형 
+   자바스크립트에서 문자열은 3가지 종류의 따옴표로 표현 가능 
+   - 큰 따옴표: "hello"
+   - 작은 따옴표: 'hello'
+   - 역 따옴표(백틱, backtick): `Hello` 
+*/
+
+let str_1 = "hello_1";
+let str_2 = 'hello_2';
+
+let num = 3;
+let str_3 = `hello_${num}`;
+
+console.log(str_1); // output: hello_1
+console.log(str_2); // output: hello_2
+console.log(str_3); // output: hello_3
