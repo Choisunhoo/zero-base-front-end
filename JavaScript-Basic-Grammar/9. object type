@@ -1,0 +1,48 @@
+// object(객체) 타입 자료
+
+let user = {
+    name: "john",
+    age: 27,
+};
+
+// user과 user안에 있는 key 변수들의 타입을 출력
+console.log(typeof user); // object
+console.log(typeof user.name); // string
+console.log(typeof user.age); // number
+
+
+// user라는 객체 타입 자료 안에 있는 값을 출력 
+console.log(user);       // { name: 'john', age: 27 }
+console.log(user.name);  // john
+console.log(user.age);   // 27
+
+// user(객체 타입)에 있는 age라는 key의 value를 30으로 변경 
+user.age = 30;
+console.log(user.age);  // 30
+
+// user에 다른 key와 value를 추가 
+user.weight = 72;  // or user["weight"] = 72;
+console.log(user);   // { name: 'john', age: 30, weight: 72 }
+
+// user에 있는 age라는 key를 제거 
+delete user.age; 
+console.log(user); // output: { name: 'john', weight: 72 }
+
+
+// 객체 복사의 문제점 
+
+let user_1 = {
+    name: "john",
+    age: 23,
+};
+
+// 객체 복사 이후에 admin 혹은 user_1 둘둥 하나의 key에 저장된 value만 바뀌어도 둘다 바뀜
+let admin = user_1; 
+
+admin.name = "park"
+console.log(admin.name);  // park
+console.log(user_1.name);   // park
+
+user_1.age = 30;
+console.log(admin.age);  // 30
+console.log(user_1.age);   // 30
