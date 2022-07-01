@@ -1,0 +1,51 @@
+let A = 123;    // 변수 선언 및 값 초기화 
+console.log(A); // output: 123 
+
+A = 456;        // 값 재할당
+console.log(A); // output: 456
+
+let A = 789;    // let으로 같은 이름의 변수를 재 선언시 > 에러
+                // SyntaxError: Identifier 'A' has already been declared
+
+
+const B = 123;  // 상수 선언 및 값 초기화 
+console.log(B); // output: 123
+
+B = 456;        // 값 재할당 > 에러
+                // TypeError: Assignment to constant variable 
+
+const C;         // 초기화 없이 상수 선언 > 에러 
+C = 123;         // SyntaxError: Missing initializer in const declaration
+
+
+// 선언 후 할당 
+let hi; 
+hi = "hello";
+
+// 선언과 동시에 초기화 
+let halo = "Hello!";
+
+// 한 줄에 여러 변수 선언과 초기화 
+let name = "john", age = 13, msg = "hello";
+
+// 상수는 보통 대문자로 표기 
+const TESTCASE = 5;
+const BIRTHDAY = '200.1.1';
+
+
+// var 와 hosting의 개념 
+// using var
+console.log(name_1);  // output: undefined
+var name_1 = "john";
+console.log(name_1);  // output: john
+
+// hosting
+var name_2
+console.log(name_2);  // output: undefined
+name_2 = "john"
+console.log(name_2);  // output: john
+
+// using let / const 
+// ReferenceError: Cannot assess 'name_3' before initialization
+console.log(name_3);
+let name_3 = "john";
