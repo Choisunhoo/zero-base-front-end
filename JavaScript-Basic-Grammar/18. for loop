@@ -1,0 +1,56 @@
+/* 반복문 for 
+   선언문(Init Expression), 조건문(Test Expression), 증감문(Update Expression) 형태로 이루어진 반복문 
+   조건문이 fail이 되기 전까지 코드 블록을 계속적으로 반복 수행 
+   선언문, 조건문, 증감문 자리에 공백 입력 가능 
+*/
+
+// output: 0 1 2
+for (let i = 0; i < 3; i++) {
+   console.log(i);
+}
+
+// output: 
+for (let i = 10; i < 3; i++) {
+   console.log(i);
+}
+
+// output 0 1
+let num = 0; 
+for (; num < 2;) {
+   console.log(num);
+   num++;
+}
+
+// 2중 for문 예제 구구단
+for (let i = 2; i < 10; i++) {
+   for (let j = 2; j < 10; j++) {
+      console.log(`${i} * ${j} = ${i * j}`);
+   }
+   console.log()
+}
+
+// for ... in 반복문 
+// 객체의 key, value 형태를 반복하여 수행하는데 최적화된 유형 
+
+const person = {fname: "john", lname: "Bob", age: 25};
+
+let text = "";
+for (let x in person) {
+   text += person[x]
+}
+
+console.log(text); // output: JohnBob25
+
+
+// for ... of 반복문 
+// Collection 객체 자체가 Symbol.iterator 속성(property)을 가지고 있어야 동작 가능한 유형 
+// ES6에 새로 추가된 Collection 기반의 반복 구문 
+
+let language = "JavaScript";
+let text_of = "";
+
+for (let x of language) {
+   text_of += x; 
+   console.log(x); // output: J \n a \n v \n a \n S \n c \n r \n i \n p \n t \n
+}
+console.log(text_of); // output: JavaScript
