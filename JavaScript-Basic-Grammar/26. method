@@ -1,0 +1,89 @@
+// 함수 저장 
+// 배열의 요소(element) 혹은 객체의 속성(property)에 함수를 정의하여 저장 가능 
+let list = ["john",
+   27, 
+   function hello_func() {
+      console.log("hello");
+   },
+];
+let obj = {
+   name: "john",
+   age: 27, 
+   hello_func() {
+      console.log("hello");
+   },
+ };
+
+ function hello_func() {
+   console.log("hello");
+}
+
+hello_func(); // output: hello
+obj.hello_func(); // output: hello
+list[2](); // output: hello
+
+console.log(typeof hello_func); // output : function
+console.log(typeof obj.hello_func); // output : function
+console.log(typeof list[2]); // output : function
+
+console.log(Object.getOwnPropertyDescriptors(obj));
+console.log(Object.getOwnPropertyDescriptors(list));
+
+// method 
+// 객체에 저장된 값이 함수인 경우, 이를 메서드(method)라고 부름
+
+// method 변경 : 객체 내 초기 선언된 함수를 다른 함수로 변경 
+function hello_func_method() { 
+   console.log("hello"); 
+}
+
+function hi_func_method() { 
+   console.log("hi"); 
+}
+
+let obj_method = {
+   name: "john",
+   age: 27,
+   func: hello_func_method,
+};
+
+hello_func_method(); //output: hello
+obj_method.func();   //output: hello
+console.log(hello_func_method == obj_method.func); // output: true
+
+
+obj_method.func = hi_func_method;
+hi_func_method();    //output: hi
+obj_method.func();   //output: hi
+console.log(hello_func_method == obj_method.func); // output: false
+console.log(hi_func_method == obj_method.func); // output: true
+
+
+// this 새머드에서 객체 내부 속성(property)값을 접근할 수 있는 지시자 
+
+let obj_this = {
+   name: "john",
+   age: 27,
+   hello_func_this(){
+      console.log(
+         "hello " + this.name);
+   },
+};
+
+
+let user = {name: "john"};
+let admin = {name: "admin"};
+
+// hello_func 내 this 값은 런타임에 결정 
+function hello_func_this() {
+   console.log("hello " + this.name);
+}
+
+user.func = hello_func_this; // user.func 수행할 때, (this == user.name)
+admin.func = hello_func_this; // admin.func 수행할 때, (this == admin.name)
+
+user.func(); // output: hello john
+admin.func(); // output: hello admin
+
+user["func"](); // output: hello john
+admin["func"](); // output: hello admin
