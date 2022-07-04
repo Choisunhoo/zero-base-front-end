@@ -1,0 +1,78 @@
+/* 함수
+   함수는 다수의 명령문을 코드 블록으로 감싸고, 하나의 실행 단위로 만든 코드의 집합
+   유사한 동작을 하는 코드를 하나로 묶어, 범용성을 확대시킨 블록 코드 
+   함수는 정의 부분과 호출 부분으로 구성 
+   함수는 가급적 한가지 일만 하며, 매개 변수는 최대 3개 이내로 권장
+*/
+
+
+/* 1. 함수 선언식(Function Declarations)
+function func (arg1, arg2, .... argN) {
+   expression; 
+}
+*/
+function add(x, y) {
+   return x + y;
+}
+
+/* 2. 함수 표현식(Function Expressions)
+const func (arg1, arg2, .... argN) {
+   expression; 
+}
+*/
+
+const add = function (x, y) {
+   return x + y;
+};
+
+/* 3. 화살표 함수(Arrow Function)
+const func (arg1, arg2, .... argN) => expression;
+
+*/
+const add = (x, y) => x + y;
+
+
+// 1. default value 
+function print_add(x, y = 10) {
+   console.log(x + y);
+}
+
+print_add(10, 20, 30);  // output : 30
+print_add(10, 20);   // output : 30
+print_add(10);    // output : 20
+print_add();   // output : NaN
+
+// 2. dynamic parameters
+function print_min() {
+   // console.log(arguments);
+   console.log(arguments[0] - arguments[1]);
+}
+
+print_add(10, 20, 30);  // output : -10
+print_add(10, 20);   // output : -10
+print_add(10);    // output : NaN
+print_add();   // output : NaN
+
+
+// 함수 반환 
+// return 후 코드는 수행되지 않으며, default return value 는 undefined
+
+function add(x, y) {
+   return x + y;
+   console.log("hello"); // 미 수행 코드
+}
+
+function dummy() {}
+
+function checkAge(age) {
+   if (age >= 18) {
+      return true;
+   }  else {
+      return false;
+   }
+}
+
+console.log(add(10, 20)); // output: 30
+console.log(dummy()); // output: undefined
+console.log(checkAge(14));  // output: false
+console.log(checkAge(20));  // output: true
