@@ -1,0 +1,78 @@
+/* String 
+   텍스트 길이에 상관없이 문자열 형태로 저장되는 자료형 
+   자바스크립트에서는 글자 하나만 저장할 수 있는 char 자료형이 없음 
+   자바스크립트에서 문자열은 페이지 인코딩 방식과 상관없이 항상 UTF-16 형식을 따름 
+   대표 속성(property)과 메서드(method)
+   문자열 길이: String.length
+   문자열 접근: String.charAt(index), String.charCodeAt(index)
+   문자열 검색: String.indexOf(), String.lastindexOf(), String,includes(), String.startsWith()등
+   문자열 변환: String.toUpperCase(), string,toLowerCase()
+   문자열 치환: String.replace()
+   문자열 추출: String.slice(), String.substring, String.substr()
+   문자열 분할: String.split()
+*/
+
+
+// 문자 정의 방법 
+// string 정의 방법: "hello" (큰 따옴표), 'hello' (작은 따옴표), String()
+// 문자열과 변수 혼합 표현방법: `Hello` (역 따옴표)
+
+let str_1 = "hello_1", str_2 = String("Hello_2");
+let num = 3, str_3 = `hello_${num}`;
+
+console.log(str_1); // output: hello_1
+console.log(str_2); // output: hello_2
+console.log(str_3); // output: hello_3
+
+console.log(`hello_${2 * 2}`); // output: hello_4
+
+// 문자 표기 
+// 다양한 문자 표기 방법: Line feed(\n), Carriage return(\r), Backslash(\\), Tab(\t), Unicode(\u{})
+
+console.log("line\nfeed"); // output: line
+                           //         feed
+console.log("carriage\rreturn"); // output: carriage
+                                 //         return
+console.log("backslash \\"); // output: backslash \
+console.log("tab\ttab"); // output: tab	tab
+console.log("smile: \u{1F60D}"); // output: smile: 😍
+
+// 문자열 길이
+// 문자열 길이 확인 방법: String.length
+
+let str_for_length = `hello
+world
+!!!`;
+let newline_string ="hello\nworld\n!!!";
+
+console.log(str_for_length.length) // output: 15
+console.log(newline_string.length) // output: 15
+
+// 문자 접근 
+// 문자열 내 개별 문자 접근 방법: String.charAt(index), String.charCodeAt(index), String[index]
+
+let str_for_at = "hello, world!!!";
+
+console.log(str_for_at.charAt(1)); // output: e
+console.log(str_for_at.charCodeAt(1)); // output: 101
+console.log(str_for_at[0]); // output: h
+
+// 문자열 검색 
+// 문자열 검색(index): String.indexOf(substr, pos), String.lastIndexOf(substr, pos)
+// 문자열 검색(bool): String.includes(substr, pos), String.startsWith(substr, pos), String.endsWith(substr, pos)
+
+let text = "hello, world!!!";
+
+console.log(text.indexOf("l")); // output: 2
+console.log(text.indexOf("l", 3)); // output: 3
+console.log(text.lastIndexOf("l")); // output: 10
+
+console.log(text.includes("HeLlo")); // output: false
+console.log(text.startsWith("ello", 1)); // output: true
+console.log(text.endsWith("world")); // output: false
+
+// 문자열 대소문자 변환 
+// 대소문자 변환: String.toUpperCase(), String.toLowerCase()
+let str_change = "HeLlo!!";
+console.log(str_change.toUpperCase()); // output: HELLO!!
+console.log(str_change.toLowerCase()); // output: hello!!
