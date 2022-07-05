@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <!--<blockquote>: 인용 블록 요소: 안쪽의 텍스트가 긴 인용문임을 나타냄 <p>태그를 안에 넣어줌-->
+        <blockquote> 
+            <p>
+                Words can be like X-rays, if you used them properly-they'll go through anything. You read and you're pierced.
+            </p>
+        </blockquote>
+    <!--<q>: 인라인 인용문 요소: 둘러싼 텍스트가 짧은 인라인 인용문 이라는 것을 나타내고, ""이 적용됨. <p>태그 안에 넣어줌-->
+        <q>이건나는 게 아냐, 아주 멋있게 떨어지는 거지</q> - 토이스토리<p> 
+    </body>
+</html>
