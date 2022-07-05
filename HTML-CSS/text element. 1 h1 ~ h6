@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <!--h1~h6 태그의 사용법
+        사용자 에이전트가 제목 정보를 사용해 자동으로 문서 콘텐츠의 표를 만드는 작업을 위해쓰는 태그
+        글씨 크기를 위해서 제목 태그 사용은 지양 CSS의 font-size 속성 사용 지향
+        순차적으로 쓰는거 추천 <h1>로 시작 <h2>작성
+        페이지당 한개의 <h1> 사용 권장-->
+        <h1>Heading elements</h1>
+
+        <h2>Summary</h2>
+        <p>Some text here...</p>
+
+        <h2>Examples</h2>
+        <h3>Example 1</h3>
+        <p>Some text here...</p>
+
+        <h3>Example 2</h3>
+        <p>Some text here...</p>
+
+        <h2>See also</h2>
+        <p>Some text here...</p>
+    </body>
+</html>
