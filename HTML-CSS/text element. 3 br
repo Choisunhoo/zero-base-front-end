@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <!--<br>: 줄바꿈 요소
+        개행을 위한 태그로 텍스트 안에 줄바꿈(캐리지 리턴)을 생성합니다.
+        주소나 시조 등 줄의 구분이 중요한 내용을 작성할때 유용합니다.
+        문단 사이에 여백을 두기 위한 용도는 <br>이 아닌 <p> 로 감싼후 CSS의 margin 속성으로 여백의 크리를 조절하는 것을 권고-->
+        <p>
+            O'er all the hill tops<br>
+            Is quiet now, <br>
+            In all the treetops<br>
+            Hearest thou<br>
+            Hardly a breath;<br>
+            The birds are asleep in the trees:<br>
+            Wait, soon like these<br>
+            Thou too shalt rest.
+        </p>
+    </body>
+</html>
