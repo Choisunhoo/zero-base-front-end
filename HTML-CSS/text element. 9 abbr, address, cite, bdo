@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <!-- <abbr> 약어(abbreviation)-->
+        <p> 
+            <abbr title="World Wide Web">WWW</abbr>
+            and
+            <abbr title="Hyper Text Markup Language">HTML</abbr>
+        </p>
+        <!-- <address> 주소라는 의미를 담고 있는 테그-->
+        <address> 
+            You may also want to visit us:<br />
+            Mozilla Foundation <br />
+            331 E Evelyn Ave <br />
+            Mountain View, CA 94041 <br />
+            USA
+        </address>
+
+        <!-- <cite> 인용의 출처-->
+        <figure>
+            <blockquote>
+                <p>It was a bright cold day in April, and the clocks were striking thirteen.</p>
+            </blockquote>
+            <figcaption>
+                First sentence in 
+                <cite>Nineteen Eighty-Four</cite>
+                by George Orwell (Part 1, Chapter 1).
+            </figcaption>
+        </figure>
+
+        <!-- <bdo> bidirectional override 텍스트를 반대 방향에서 작성할때 쓰는 테그-->
+        <p>이 글은 왼쪽이서 오른쪽으로 작성합니다</p>
+        <p><bdo dir="rtl">이 글은 오른쪽에서 왼쪽으로 작성합니다.</bdo></p>
+    </body>
+</html>
