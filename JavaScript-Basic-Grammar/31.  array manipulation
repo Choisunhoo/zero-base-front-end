@@ -1,0 +1,82 @@
+// 배열조작 
+
+// 배열 추가/삭제(LIFO(Last in FIrst out) - Back)
+// 배열 추가: Array.push(element), 배열 삭제: Array.pop()
+
+let fruits_back = ["apple", "kiwi", "melon"];
+
+ret_back = fruits_back.push("watermelon");
+console.log(fruits_back); // output: [ 'apple', 'kiwi', 'melon', 'watermelon' ]
+console.log(ret_back); // output:  4
+ret_back = fruits_back.pop();
+console.log(fruits_back); // output: [ 'apple', 'kiwi', 'melon' ]
+console.log(ret_back); // output:  watermelon
+
+// 배열 추가/삭제(LIFO(Last in FIrst out) - Front)
+// 배열 추가: Array.unshift(element), 배열 삭제: Array.shift()
+
+
+let fruits_front = ["apple", "orange", "melon"];
+
+ret_front = fruits_front.shift();
+console.log(fruits_front); // output: [ 'orange', 'melon' ]
+console.log(ret_front); // output:  apple
+ret_front = fruits_front.unshift("watermelon");
+console.log(fruits_front); // output: [ 'watermelon', 'orange', 'melon' ]
+console.log(ret_front); // output: 3
+
+// 배열 삭제/변경(index)
+// 배열 요소 삭제/변경: Array.splice(index[, deleteCount, elem1,....,elemN])
+
+let fruits_index = ["apple", "orange", "melon"];
+
+console.log(fruits_index.splice(1)); // output: ["orange", "melon"]
+console.log(fruits_index); // output: ["apple"]
+
+fruits_index = ["apple", "orange", "melon", "strawberry"];
+console.log(fruits_index.splice(1,1)); // output: ["orange"]
+console.log(fruits_index); // output: ["apple", "melon", "strawberry"];
+
+console.log(fruits_index.splice(1, 1, "mange", "kiwi")); // output: ["melon"]
+console.log(fruits_index); // output: ["apple",  "mange", "kiwi", "strawberry"];
+
+// 배열 삭제(index)
+// 배열 요소 삭제: Array.slice([start], [end])
+
+let fruits_sli = ["apple", "orange", "melon"];
+
+console.log(fruits_sli.slice(1)); // output: [ 'orange', 'melon' ]
+console.log(fruits_sli); // output: [ 'apple', 'orange', 'melon' ]
+
+console.log(fruits_sli.slice(1, 2)); // output: [ 'orange' ]
+console.log(fruits_sli.slice(-2)); // output: [ 'orange', 'melon' ]
+
+// 배열 병합 
+// 다중 배열 병합: Array.concat(arg1, arg2)
+
+let fruits_con = ["apple", "orange", "melon"];
+
+console.log(fruits_con.concat("strawberry"));  // output:  [ 'apple', 'orange', 'melon', 'strawberry' ]
+console.log(fruits_con.concat(["cherry", "banana"]));  // output: [ 'apple', 'orange', 'melon', 'cherry', 'banana' ]
+console.log(fruits_con.concat(["cherry", "banana"], "mango"));  // output: [ 'apple', 'orange', 'melon', 'cherry', 'banana', 'mango' ]
+
+let fruits_loop = ["apple", "orange", "melon"];
+
+// 1. use for (index)
+// output: apple, orange, melon
+for (let i = 0; i < fruits_loop; i++) {
+  console.log(fruits_loop[i]);
+}
+
+// 1. use for ...(element) of 
+// output: apple, orange, melon
+for (let fruit of fruits_loop) {
+  console.log(fruit);
+}
+
+// 1. use for ...(key) of 
+// output: apple, orange, melon
+for (let key in fruits_loop) {
+  console.log(fruits_loop[key]);
+}
+ 
