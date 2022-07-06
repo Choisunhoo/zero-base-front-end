@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <!--<hr>요소는 이야기 장면 전환, 구획 내 주제 변경 등, 문단 레벨 요소에서 주제의 분리를 나타냅니다-->
+
+        <p> 1: The first rule of FIght Club is: You do not talk about Fight Club.</p>
+
+        <hr>
+
+        <p> 2: The second  rule of FIght Club is: Always bring cupcakes.</p>
+    </body>
+</html>
