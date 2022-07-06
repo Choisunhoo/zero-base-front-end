@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <!--<figure>요소는 독립적인 콘텐츠를 표현합니다. <figcaption> 요소를 사용해 설명을 붙일 수 있습니다.-->
+        <figure>
+            <p>
+                Bid me discourse, I will enchant thine ear, Or like a fairy trip upon the green, Or, like a nymph, with long dishevell'd hair,
+                Dance on the sands, and yet no footing seen: Love is a spirit all compact of fire. Not gross to sink, but light, and will aspire.
+            </p>
+            <figcaption>by William Shakespeare</figcaption>
+        </figure>
+    </body>
+</html>
