@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <!-- <i> 요소는 텍스트에서 어떤 이유로 주위와 구분해야 하는 부분을 나타냅니다. 기술 용어, 외국인 구절, 등장인물의 생각 등을 예시로 들 수 있습니다. 보통 기울임꼴로 표시합니다.-->
+        <h2>em</h2>
+        <p><i>Iron Man</i> is a hero.</p>
+        <p>노래 가사에 사용된<i>Uno, dos, tres, cuatro!</i>는 스페인어로 하나, 둘, 셋, 넷을 뜻합니다.</p>
+        <!-- <em> 요소는 텍스트의 강세를 나타냅니다. <em> 요소를 중첩하면 더 큰 강세를 뜻하게 됩니다.-->
+        <h2>em</h2>
+        <p>Get out of bed <em>now</em></p>
+        <p>그가 <em>어떤 때에</em> 웃는지, 그리고 <em>왜</em> 웃는지 아무도 알지 못했다.</p>
+    </body>
+</html>
