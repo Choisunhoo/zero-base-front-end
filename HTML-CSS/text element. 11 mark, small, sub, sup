@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <!-- <mark> 요소는 현재 맥락에 관련이 깊거나 중요해 표시 또는 하이라이트한 부분을 나타냅니다.-->
+        <p>Several species of <mark>salamander</mark> inhabit the temperate rainforest of the Pacific Northwest.</p>
+        <p>Most <mark>salamander</mark>s are nocturnal, and hunt for insects, worms, and other small creatures.</p>
+        <!-- <small> 요소는 덧붙이는 글이나, 저작권과 법률 표기 등의 작은 텍스트를 나타냅니다.-->
+        <p>MDN Web Docs is a learning platform for Web technologies and the software</p>
+        <p><small>The content is licensed under a Creative Commons Attribution-ShareAlike 2.5 Generic License.</small></p>
+        <!-- <sup> 위 첨자 요소는 활자 배치를 위 첨자로 해야하는 인라인 텍스트를 지정합니다(공식이나 수식)-->
+        <p><var>a<sup>2</sup></var> + <var>b<sup>2</sup></var> = <var>c<sup>2</sup></var></p>
+        <!--<sub> 아래 첨자 요소는 활자 배치를 아래 첨자로 해야하는 인라인 텍스트를 지정합니다(화학식)--->
+        <p>c<sub>8</sub>H<sub>10</sub>N<sub>4</sub>O<sub>2</sub> is "caffeine."</p>
+    </body>
+</html>
