@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <!-- <a> 요소(앵커 요소) 는 href 특성을 통해 다른 페이지나 같은 페이지의 어느 위치, 파일, 이메일 주소와 그 외 다른 URL로 연결할 수 있는 하이퍼링크를 만듭니다. <a> 안에 콘텐츠는 링크 목적지의 설명을 나타내여 합니다.-->
+        <h2>a 태그 - 하이퍼링크</h2>
+        <h3>속성1 : href</h3>
+        <p>
+            <!--절대경로-->
+            <a href="https://www.mozilla.com">Mozilla</a>
+
+            <!-- 상대경로 -->
+            <a href="workspace/another/a.html">다른파일</a>
+
+            <!-- 이메일/전화 -->
+           <a href="mailto:bgbg789456@gmail.com">Send email</a>
+           <a href="tel:010-2994-0171"> Sunho's mobile phone<a/>
+        </p>
+
+        <!--웹페이지에서 다른 웹페이지로 이동이 아닌 다른 창을 실행하는 태그-->
+        <h3>속성2: target</h3>
+        <a href="https://www.mozilla.com" target="_blank"> Mozilla</a>
+    </body>
+</html>
