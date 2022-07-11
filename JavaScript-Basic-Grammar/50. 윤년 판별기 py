@@ -1,0 +1,16 @@
+#  윤년 판별기
+
+n = int(input())
+
+for i in range(n):
+    year = int(input())
+    result = "ture"
+    
+    if year % 400 == 0:
+        result = "true"
+    elif year % 4 == 0 and year % 100 != 0:
+        result = "true"
+    else:
+        result = "false"
+    
+    print(result)
