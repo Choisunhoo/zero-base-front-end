@@ -1,0 +1,22 @@
+// 핸드폰 판매
+
+/* user code */
+function answer(employee) {
+  let phone_selling = 0;
+  let employee_id = 0;
+  for (let i = 0; i < employee.length; i++){
+    if (employee[i] > phone_selling) {
+      phone_selling = employee[i] ;
+      employee_id = i + 1;
+    }
+  };
+
+  return employee_id;
+}
+
+/* main code*/
+let input = [ [80, 95, 65, 70, 100], [82, 77, 51, 64, 73, 90, 80], [100, 71, 59, 88, 72, 75, 91, 93] ];
+
+for (let i = 0; i < input.length; i++) {
+  console.log(`#${i + 1} ${answer(input[i])}`);
+}
