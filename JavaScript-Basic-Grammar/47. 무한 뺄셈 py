@@ -1,0 +1,15 @@
+# 무한 뺄셈
+n = int(input())
+
+for i in range(n):
+    x, y = map(int, input().split())
+    data = [] 
+    data.append(x)
+    data.append(y)
+    while x >= y:
+        temp = x - y
+        x = y
+        y = temp 
+        data.append(temp)
+    
+    print(data)
