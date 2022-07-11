@@ -1,0 +1,25 @@
+// 두 수 사이 숫자
+
+/* user code */
+function answer(x, y) {
+  let result = [];
+  if (x < y) {
+    for (let i = x; i < y; i++){
+      result.push(i);
+    }
+  }
+  else if (x > y) {
+    for (let i = y; i < x; i++){
+      result.push(i);
+    }
+  }
+  return result;
+}
+
+/* main code*/
+let input = [ [3, 7], [8, 3], [12, 10] ];
+
+for (let i = 0; i < input.length; i++) {
+  process.stdout.write(`#${i + 1} `);
+  console.log(answer(input[i][0], input[i][1]));
+}
