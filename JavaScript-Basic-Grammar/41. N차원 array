@@ -1,0 +1,59 @@
+/* N차원 배열 
+  배열(Array)안에 N개 만큼 배열이 존재하는 객체
+  2/3차원 지도 정보, RGB를 저장하는 2차원 사진 파일 등을 표현할 때 활용 가능 
+*/
+
+
+// 2차원 배열 예제 
+// 2차원 배열은 array[N][M]으로 접근하며, 배열(Array) 전체를 push(), pop() 가능 
+
+let array = [
+  [101, 102, 103],
+  [201, 202, 203],
+  [301, 302, 303],
+];
+
+console.log(array); // output:  [ [ 101, 102, 103 ], [ 201, 202, 203 ], [ 301, 302, 303 ] ]
+console.log(array[0]); // output:  [ 101, 102, 103 ]
+console.log(array[1][0]); // output: 201
+console.log(array[2][2]); // output: 303
+
+let arr_2 = array.pop();
+console.log(array.length); // output: 2
+console.log(arr_2); // output: [ 301, 302, 303 ]
+console.log(array); // output: [ [ 101, 102, 103 ], [ 201, 202, 203 ] ]
+
+let array_num = array.push([401, 402, 403]);
+console.log(array.length); // output: 3
+console.log(array_num); // output: 3
+console.log(array); // output: [ [ 101, 102, 103 ], [ 201, 202, 203 ], [ 401, 402, 403 ] ]
+
+// 2차원 배열 반복문 예제 
+// 이중 for loop를 사용한 2차원 배열 접근 
+
+let array_1 = [
+  [101, 102, 103],
+  [201, 202, 203],
+  [301, 302, 303],
+];
+for (let i = 0; i < array_1.length; i++) {
+  for (let j = 0; j < array_1[i].length; j++) {
+    console.log(array_1[i][j]);
+  }
+}
+/** output: 101 ... 303 */
+
+let fruits = [
+  ["strawberry", 50],
+  ["banana", 100],
+  ["ice", 150],
+];
+
+for (let i = 0; i < fruits.length; i++) {
+  console.log(`fruit: ${fruits[i][0]}, amount: ${fruits[i][1]}`);
+}
+/* output
+fruit: strawberry, amount: 50
+fruit: banana, amount: 100
+fruit: ice, amount: 150
+*/
