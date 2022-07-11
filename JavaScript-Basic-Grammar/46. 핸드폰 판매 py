@@ -1,0 +1,13 @@
+# 핸드폰 판매
+n = int(input())
+
+for i in range(n):
+    data = list(map(int, input(). split()))
+    index = 0
+    phone_selling = 0
+    for i in range(len(data)):
+        if data[i] > phone_selling:
+            phone_selling = data[i]
+            index = i
+    
+    print(index + 1)
