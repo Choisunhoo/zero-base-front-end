@@ -1,0 +1,7 @@
+# 반평균
+n = int(input())
+
+for i in range(n):
+    data = list(map(int, input(). split()))
+    answer = sum(data) / len(data)
+    print(format(answer, ".2f"))
