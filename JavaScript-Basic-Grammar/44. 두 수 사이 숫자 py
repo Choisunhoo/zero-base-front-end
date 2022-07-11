@@ -1,0 +1,17 @@
+# 두 수 사이 숫자 
+n = int(input())
+
+for i in range(n):
+    data = list(map(int, input(). split()))
+    result = []
+    if data[0] > data[1]:
+        for j in range(data[1], data[0]):
+            result.append(j)
+    elif data[0] < data[1]:
+        for j in range(data[0], data[1]):
+            result.append(j)
+    
+    print("#", end="")
+    print(i + 1, end=" ")
+    print(result)
+        
