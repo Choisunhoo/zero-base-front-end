@@ -1,1 +1,24 @@
+# 별별별 
+n = int(input())
 
+for i in range(n):
+    star_num = int(input())
+    print("#",end="")
+    print(i+1, end=" ")
+    print("*"*star_num)
+
+
+
+# or 
+
+def star(num):
+    result = "*" * num
+    return result 
+
+
+stars = [3, 7, 12]
+
+for i in range(3):
+    print("#",end="")
+    print(i+1, end=" ")
+    print(star(stars[i]))
