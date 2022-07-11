@@ -1,0 +1,14 @@
+#  나누기와 대소 비교 
+n = int(input())
+
+for i in range(n):
+    data = list(map(int, input().split()))
+    x = data[0] / data[1]
+    y = data[2] / data[3]
+    if x > y:
+        print(1)
+    elif x < y:
+        print(-1)
+    else:
+        print(0)
+    
