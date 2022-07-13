@@ -1,0 +1,15 @@
+# 요일 구하기
+
+from datetime import datetime, date
+
+
+def what_day (date):
+    days = ['월요일', '화요일', '수요일', '목요일', '금요일', '토요일', '일요일']
+    day = date.weekday()
+    print(days[day])
+
+n = int(input())
+
+for i in range(n):
+    data = list(map(int, input().split("-")))
+    what_day(date(data[0], data[1], data[2]))
