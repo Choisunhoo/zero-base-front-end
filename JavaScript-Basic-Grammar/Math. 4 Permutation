@@ -1,0 +1,68 @@
+// 경우의 수
+// 순열 (Permutation)
+// 서로 다른 n개의 원소 중에서 r를 중복 없이 골라 순서에 상관 있게 나열하는 경우의 수(nPr)
+
+// 순열 예제(1)
+
+let input = ["a", "b", "c"];
+let cnt = 0
+
+function permutation(arr) {
+  for (let i = 0; i < arr.length; i++) {
+    for (let j = 0; j < arr.length; j++) {
+      if (i == j) continue;
+      for (let k = 0; k < arr.length; k++) {
+        if (i == k) continue;
+        if (j == k) continue;
+
+        console.log(arr[i], arr[j], arr[k]);
+        cnt ++;
+      }
+    }
+  }
+}
+
+permutation(input)
+console.log(cnt)
+
+/* output
+a b c
+a c b
+b a c
+b c a
+c a b
+c b a
+6
+*/
+
+//  순열 예제(2)
+
+let input_2 = ["a", "b", "c"];
+let cnt_2 = 0
+
+function permutation_2(arr, s, r) {
+  if (s == r) {
+    cnt_2++;
+    console.log(arr.join(" "));
+    return;
+  }
+
+  for (let i = s; i < arr.length; i++) {
+    [arr[s], arr[i]] = [arr[i], arr[s]]
+    permutation_2(arr, s + 1, r);
+    [arr[s], arr[i]] = [arr[i], arr[s]]
+  }
+}
+
+permutation_2(input, 0, 2);
+console.log(cnt_2)
+
+/* output
+a b c
+a c b
+b a c
+b c a
+c a b
+c b a
+6
+*/
