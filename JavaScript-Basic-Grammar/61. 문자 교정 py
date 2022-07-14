@@ -1,0 +1,16 @@
+# 문자 교정
+from collections import deque
+
+n = int(input())
+
+for i in range(n):
+    data = list(input())
+    data[0] = data[0].upper()
+    for i in range(1, len(data)):
+        if data[i] == " ":
+            data[i + 1] = data[i + 1].upper()
+    
+    
+    for i in range(len(data)):
+        print(data[i], end="")
+    print()
