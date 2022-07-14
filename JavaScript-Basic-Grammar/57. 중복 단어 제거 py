@@ -1,0 +1,12 @@
+# 중복단어 제거
+
+input = [ ["john", "alice", "alice"],
+          ["Hello", "hello", "Hello", "hello"],
+          ["kiwi", "banana", "mango", "kiwi", "banana"]]
+
+
+for i in range(3):
+    data = input[i]
+    data = set(data)
+    data = list(data)
+    print(data)
