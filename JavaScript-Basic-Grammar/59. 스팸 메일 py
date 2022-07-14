@@ -1,0 +1,13 @@
+# 스팸 메일
+
+n = int(input())
+
+for i in range(n):
+    word = str(input())
+    word = word.lower()
+    result = word.find("advert")
+    
+    if result == -1:
+        print("false")
+    else:
+        print("true")
