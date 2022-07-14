@@ -1,0 +1,22 @@
+// 중복 단어 제거
+
+/* user code */
+function answer(arr) {
+  let new_arr = [];
+
+  new_arr = Array.from(new Set(arr));
+
+  return new_arr;
+}
+
+/* main code*/
+let input = [ 
+  ["john", "alice", "alice"],
+  ["Hello", "hello","Hello", "hello"],
+  ["kiwi", "banana", "mango", "kiwi", "banana"],
+];
+
+for (let i = 0; i < input.length; i++) {
+  process.stdout.write(`#${i + 1} `);
+  console.log(answer(input[i]));
+}  
