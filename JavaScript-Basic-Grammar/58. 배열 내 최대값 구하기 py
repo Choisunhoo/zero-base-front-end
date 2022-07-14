@@ -1,0 +1,7 @@
+# 배열 내 최대값 구하기 
+
+n = int(input())
+
+for i in range(n):
+    data = list(map(int, input().split()))
+    print(max(data))
