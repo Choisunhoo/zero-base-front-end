@@ -1,0 +1,12 @@
+# 배열 회전
+from collections import deque
+
+n = int(input())
+
+for i in range(n):
+    data = list(input().split())
+    result = [0] * len(data)
+    for i in range(len(data)):
+        result[len(data) - i - 1] = data[i]
+    
+    print(result)
