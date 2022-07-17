@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <h2>Semantic Web</h2>
+        <!--요소의 의미를 고려하려, 구조를 설계하고 코트를 작성할때 씀
+            이는 검색엔진에 영향을 끼침으로 효율적인 사용이 요구됨-->
+
+        <!-- <main> 요소는 문서 <body>의 주요 콘텐츠를 나타냅니다. 주요 콘텐츠 영역은 문서의 핵심 주제나 앱의 핵심
+            기능에 직접적으로 연결됐거나 확장하는 콘텐츠로 이루어집니다.-->
+        
+        <header>Gecko facts</header>
+
+        <main>
+            <p>Geckos are a group of usually small, usually noctural 
+            lizards. They are found on every continent except Australia
+            </p>
+
+                <p>Many species of gecko have adhensive toe pads which 
+            enable them to climb walls and even windows.</p>
+        </main>
+
+    </body>
+</html>
