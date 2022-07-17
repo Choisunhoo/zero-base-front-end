@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <h2>Semantic Web</h2>
+        <!--요소의 의미를 고려하려, 구조를 설계하고 코트를 작성할때 씀
+            이는 검색엔진에 영향을 끼침으로 효율적인 사용이 요구됨-->
+
+        <!-- <article> 요소는 문서, 페이지, 애플리케이션, 또는 사이트 안에서 독립적으로 구분해 배포하거나 재사용할
+            수 있는 구획을 나타냅니다. 사용 예제로 게시판과 블로그 글, 매거진이나 뉴스 기사 등이 있습니다.-->
+        
+        <!--<section>: 일반 구획 요소는 HTML 문서의 독립적인 구획을 나타내며, 더 적합한 의미를 가진 요소가 없을 때 사용합니
+            다. 보통 <section>은 제목을 포함하지만, 항상 그런 것은 아닙니다.-->
+            
+        <h2>Choosing an Apple</h2>
+        <section>
+            <h3>Introduction</h3>
+            <p>This document provides a guide to help with the 
+        important task of choosing the correct Apple.</p>
+        </section>
+    </body>
+</html>
