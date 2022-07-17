@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <h2>Semantic Web</h2>
+        <!--요소의 의미를 고려하려, 구조를 설계하고 코트를 작성할때 씀
+            이는 검색엔진에 영향을 끼침으로 효율적인 사용이 요구됨-->
+
+        <!-- header 요소는 소개 및 탐색에 도뭉을 주는 콘텐츠를 나타냅니다. 제목, 로고, 검색 폼, 작성자 이름 등의 요소도 포함가능
+            웹페이지의 header는 하나만 사용해야함-->
+        
+        <article>
+        <!-- header 요소는 소개 및 탐색에 도뭉을 주는 콘텐츠를 나타냅니다. 제목, 로고, 검색 폼, 작성자 이름 등의 요소도 포함가능
+            웹페이지의 header는 하나만 사용해야함-->
+            <header>
+                <h2>The planet Earth</h2>
+                <p>Posted on Wednesday, <time datetime="2022-07-17">17 July 2022</time> by Sunho Choi</p>
+            </header>
+             <!-- footer 요소는 가장 가까운 구획 콘텐츠 나 구획 루트의 푸터를 나타냅니다. 푸터는 일반적으로 구획의 작성자, 저작권 정보, 관련 문서 등의 내용을 담습니다.-->
+             <footer>
+                Some copyright info or perhaps some author
+                info for an &lt;article&gt;?
+             </footer>
+        </article>
+
+
+    </body>
+</html>
