@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+
+        <style>
+            table, td, th { border: 1px solid gray;}
+        </style>
+    </head>
+    <body>
+        <!--<caption> 표 설명 요소는 표의 설명 또는 제목을 나타냅니다.-->
+        <table>
+            <caption>Example Caption</caption>
+            <tr>
+                <th>Login</th>
+                <th>Email</th>
+            </tr>
+            <tr>
+                <td>user1</td>
+                <td>user1@sample.com</td>
+            </tr>
+            <tr>
+                <td>user2</td>
+                <td>user2@sample.com</td>
+            </tr>
+        </table>
+    </body>
+</html>
