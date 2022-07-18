@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+
+        <style>
+            table, td, th { border: 1px solid gray;}
+        </style>
+    </head>
+    <body>
+        <h2>Image</h2>
+        <!--<img> 이미지 삽입 요소-->
+        <!--절대경로-->
+        <img src="http://news.samsungdisplay.com/wp-content/uploads/2018/08/8.jpg" />
+
+        <!--상대경로-->
+        <img src="C:\Users\User\Desktop\PythonWorkSpace\16b6fa8418349ff1e.jpg"/>
+    </body>
+</html>
