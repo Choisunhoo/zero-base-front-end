@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+
+        <style>
+            table, td, th { border: 1px solid gray;}
+        </style>
+    </head>
+    <body>
+        <table>
+            <thead>
+                <tr>
+                    <th scope="col">품목</th>
+                    <th scope="col">지출</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <th colspan="2">식재료</th>
+                </tr>
+                <tr>
+                    <th scope=""row>대파</th>
+                    <td>3,000</td>
+                </tr>
+                <tr>
+                    <th scope=""row>달걀</th>
+                    <td>4,000</td>
+                </tr>
+            </tbody>
+            <tbody>
+                <tr>
+                    <th colspan="2">기타 품목</th>
+                </tr>
+                <tr>
+                    <th scope=""row>고양이간식</th>
+                    <td>12,000</td>
+                </tr>
+                <tr>
+                    <th scope=""row>종이봉투</th>
+                    <td>300</td>
+                </tr>
+            </tbody>
+            
+            <tfoot>
+                <tr>
+                    <th scope="row">Totals</th>
+                    <td>33,300</td>
+                </tr>
+            </tfoot>
+        </table>
+    </body>
+</html>
