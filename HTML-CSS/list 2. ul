@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <!-- <ol> 요소는 정령된 목록을 나타냅니다. 보통 숫자 목록으로 표현합니다.
+            타입에 따라서 listing 되는 기준이 달라짐 ex type = "1" 1, 2, 3.... type = "A", A, B, C...
+            start 를 사용하면 listing 을 시작하는 번호 혹은 알파벳을 바꾸는것이 가능
+            reverse 를 사용하면 123 순이 아닌 321 처럼 item의 개수의 최대치부터 시작되는 역순으로 변환-->
+        <h2>Ordered List</h2>
+
+        <ol>
+            <!--<li>는 listed item 의 약자 value 값을 사용해서 특정 item의 listing 번호를 강제하는 것이 가능함 그리고 그 뒤에 따라오는 것도 자동으로변경됨-->
+            <li>Toy Story</li>
+            <li>Zootopia</li>
+            <li>Inside Out</li>
+        </ol>
+
+        <!--<ul> 요소는 정렬되지 않은 목록을 나타냅니다. 보통 불릿을 표현합니다. 전역 특성만을 포함합니다.-->
+        <h2>Unordered List</h2>
+
+        <ul>
+            <li>Toy Story</li>
+            <li>Zootopia</li>
+            <li>Inside Out</li>
+        </ul>
+
+        <h2>Menu</h2>
+        <!--중첩에 따라서 불릿의 종류나 색이 달라짐-->
+        <ul>
+            <li>Milk</li>
+            <li>Cheese
+                <ul>
+                    <li>Blue Cheese</li>
+                    <li>Feta</li>
+                </ul>
+            </li>
+        </ul>
+    </body>
+</html>
