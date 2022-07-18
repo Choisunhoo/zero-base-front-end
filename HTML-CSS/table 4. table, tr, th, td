@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+
+        <style>
+            table, td, th { border: 1px solid gray;}
+        </style>
+    </head>
+    <body>
+        <!--<table> 요소는 행과 열로 이루어진 표를 나타냅니다-
+            <th>는 table head의 약자로 어떤 행이나 열을 대표하는 혹은 통칭하는 역할을 한다
+            <td>는 table data 단순한 데이터들을 표현하는 역할--->
+        
+        <table>
+
+            <tr>
+                <th scope="col">나라이름</th>
+                <th scope="col">수도</th>
+                <th scope="col">인구</th>
+            </tr>
+
+            <tr>
+                <th scope="row">한국</th>
+                <td>서울</td>
+                <td>5100만</td>
+            </tr>
+
+            <tr>
+                <th scope="row">미국</th>
+                <td>워싱턴 D.C.</td>
+                <td>3억</td>
+            </tr>
+
+            <tr>
+                <th scope="row">태국</th>
+                <td>방콕</td>
+                <td>6900만</td>
+            </tr>
+
+            <!--<td>나 <th>안에 colspan을 이용해서 차지하고 싶은 영역을 변경가능 -->
+            <tr>
+                <td colspan="2">합계</td>
+                <td>4억 2000만</td>
+            </tr>
+        </table>
+    </body>
+    
+</html>
