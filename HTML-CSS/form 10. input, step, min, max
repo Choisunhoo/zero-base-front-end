@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+
+
+    </head>
+    <body>
+        <!-- <input>:입력 요소는 웹 기반 양식에서 사용자의 데이터를 받을 수 있는 대화형 컨트롤을 생성합니다. 사용자 에이전트에 따라서
+        다양한 종류의 입력 데이터 유형과 컨트롤 위젯이 존재합니다. 입력 유형과 특성의 다양한 조합 가능성으로 인해, <input> 요소는 
+        HTML에서 제일 강력하고 복잡한 요소 중 하나입니다. -->
+        <h2>Form</h2>
+        
+        <form action="" method="GET">
+
+            <div>
+                <label for="username">이름: </label>
+                <input type="text" 
+                       name="username" 
+                       id="username" 
+                       placeholder="홍길동" 
+                       autocomplete="off"
+                        required
+                    />
+            </div>
+            <div>
+                <label for="job">직업: </label>
+                <input type="text" 
+                       name="job" 
+                       id="job" 
+                       value = 교사
+                       readonly
+                    />
+            </div>
+            <div>
+                <label for="age">나이: </label>
+                <input type="text" 
+                       name="age" 
+                       id="age" 
+                       disabled
+                    />
+            </div>
+
+            <div>
+                <label for="score">평점</label>
+                <input type="range" name="score" id="score" min="-10" max="10" step="2"/>
+            </div>
+
+            <input type="reset">
+            <input type="submit">
+
+        </form>
+    </body>
+</html>
