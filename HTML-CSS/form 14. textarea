@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+
+
+    </head>
+    <body>
+        <h2>Form</h2>
+
+        <!--<textarea> 요소는 멀티라인 일반 텍스트 편집 컨트롤을 나타냅니다.-->
+
+        <form action="" method="GET">
+
+            <label for ="comment">댓글 :</label>
+            <textarea name="comment" id="comment" rows="5" cols="20">
+                개행을 
+                해도 
+                적용됩니다. 
+            </textarea>
+            
+
+            <input type="submit">
+        </form>
+    </body>
+</html>
