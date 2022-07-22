@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+
+
+    </head>
+    <body>
+        <h2>Form</h2>
+
+        <!--<select> 요소는 옵션 메뉴를 제공하는 컨트롤을 나타냅니다. -->
+
+        <form action="" method="GET">
+            
+            <label for="movie">좋아하는 영화: </label>
+            <select id="movie" name="movie" required>
+                <!--후보군-->
+                <option value="">--Please choose an option--</option>
+                <optgroup label="A">
+                    <option value="toystory">토이스토리</option>
+                    <option value="zootopia">주토피아</option>
+                    <option value="inside out">인사이드 아웃</option>
+                    <option value="veteran">베테랑</option>
+                </optgroup>
+                <optgroup label="B">
+                    <option value="matrix"> 매트릭스</option>
+                </optgroup>
+
+            </select>
+           
+
+            <input type="submit">
+        </form>
+    </body>
+</html>
