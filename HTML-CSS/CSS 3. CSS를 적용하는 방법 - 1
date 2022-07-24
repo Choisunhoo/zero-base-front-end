@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!--Embedded Style-->
+        <style>
+            h1{
+                color:red;
+            }
+        </style>
+        <!--External Style-->
+        <link rel="stylesheet" href="style/main.css"/>
+        <title>CSS</title>
+    </head>
+    <body>
+        <h1>Welcome!</h1>
+        <!--Inline Style-->
+        <h2 style="color:blue">Hi there!</h2>2
+    </body>
+</html>
