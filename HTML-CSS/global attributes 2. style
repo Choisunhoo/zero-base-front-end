@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+
+    </head>
+    <body>
+        <!--style 전역 특성은 요소에 적용할 CSS스타일 선언을 담습니다. 스타일은 별도의 파일에 정의하는 것이 권장된다는 점을 
+        참고하세요. 이 특성과 <style> 요소는 주로 테스트 등 빠른 스타일링을 위한 목적으로 사용됩니다. -->
+
+        <div style="background: #ffe7e8; border: 2px solid #e66465;">
+            <p style="margin: 15px; line-height: 1.5; text-align: center;">
+                Well, I am the slime from your video<br>
+                Oozin' along on your livin' room floor.</p>
+        </div>
+    </body>
+</html>
