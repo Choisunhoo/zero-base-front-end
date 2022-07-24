@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!--<head>요소는 페이지를 열 때 브라우저에 표시되는 <body>요소와 다르게, head의 내용은 페이지에 표시되지 않습니다.
+        대신 head의 내용이 하는일은 페이지에 대한 metadata(data를 설명하는 data)를 포함하는 것입니다.-->
+    <head>
+
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+
+        <!--<script>: 스크립트 요소는 데이터와 실행 가능한 코드를 문서에 포함할 때 사용하며 보통 JavaScript 코드와 함께 씁니다.
+            WebGL의 GLSL 셰이더 프로그래밍 언어, JSON등 다른 언어와도 사용할 수 있습니다.-->
+        <script src="javascript.js"></script>
+    </head>
+    <body>
+        <p>
+            안녕하세요. 반갑습니다.
+        </p>
+    </body>
+</html>
