@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style/main.css"/>
+        <title>CSS</title>
+    </head>
+    <body>
+
+        <h1 id="welcome-title">Welcome!</h1>
+
+        <h2>Movie List</h2>
+        <ul>
+            <li class="blue red">Toy Story</li>
+            <li class="red">Zootopia</li>
+            <li class="blue">Inside Out</li>
+        </ul>
+
+        <h2>Coffee List</h2>
+        <ol>
+            <li>first</li>
+            <li>second</li>
+        </ol>
+
+        <h3>Lorem Ipsum</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit.</p>
+        <p class="blue">Saepe officia qui, voluptatem sunt, eos, quia nesciunt tenetur voluptas quas ex exercitationem tempora nulla blanditiis incidunt recusandae corporis sed.</p>
+        <p>Eligendi, temporibus!</p>
+    </body>
+</html>
+
+
+
+/* Type Selector  요소 선택자: 일관적으로 다 변경, 보통 상단부에 사용*/
+h2 {
+    color: purple;
+} 
+
+/* ID Selector */
+#welcome-title{
+    color:red;
+}
+
+/* Class Selector */
+.blue {
+    color: blue;
+}
+
+.red {
+    color: red;
+}
