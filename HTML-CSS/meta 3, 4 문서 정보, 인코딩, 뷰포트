@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!--<head>요소는 페이지를 열 때 브라우저에 표시되는 <body>요소와 다르게, head의 내용은 페이지에 표시되지 않습니다.
+        대신 head의 내용이 하는일은 페이지에 대한 metadata(data를 설명하는 data)를 포함하는 것입니다.-->
+    <head>
+        <!--<meta> 요소는 <base>, <link>, <script>, <style>, <title>과 같은 메타 관련 요소로 나타낼 수 없는 메타데이터를 나타냅니다.-->
+        
+        <!--문자 인코딩 각국가의 언어들을 지원할 수 있는 유니코드를 사용하는 것 UTF-8-->
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <!--viewport 전체 브라우저 중에서 웹페이지를 볼 수 있는 영역-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+
+    </head>
+    <body>
+    </body>
+</html>
