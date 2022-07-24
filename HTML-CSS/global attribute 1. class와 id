@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+
+    </head>
+    <body>
+        <!--id 전역 특성은 문서 전체에서 유일한 고유식별자(ID)를 정의합니다. 고유식별자의 목적은 프래그먼트 식별자를 사용해
+        요소를 가르킬 때와 스크립트 및 스타일 적용 시 특정 요소를 식별하기 위함입니다.-->
+
+        <!--class전역 특성은 공백으로 구분한 요소 클래스의 목록으로, 대소문자를 구분하지 않습니다. 클래스는 css나 javascript에서 
+        클래스 선택자나 dom 메서드의 document.getElementsByClassName()과 같은 메서드를 통해 요소에 접근할 수 있는 방법입니다. 중복도 가능하다-->
+
+        <div class="bye">안녕하세요.</div>
+        <div class="hi bye">안녕하세요.</div>
+        <div id ="hello">안녕하세요.</div>
+        <div class="hi">안녕하세요.</div>
+        <div>안녕하세요.</div>
+
+    </body>
+</html>
