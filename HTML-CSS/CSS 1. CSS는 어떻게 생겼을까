@@ -1,0 +1,14 @@
+/* 1. 선택자(Selector), : 스타일을 지정할 HTML 요소를 선택 
+   2. 선언 블록(declation block): 중괄호 {} 내부의 여러 선언들을 작성 
+   3. 선언(declations): 프로퍼티와 값으로 이루어진 쌍 
+   4. 선택자 { 하나이상의 선언 } 의 형태로 이루어진 하나의 Rule (혹은 Rule Set)
+*/
+
+h1 {
+    color: red;
+    font-size: 12px; 
+}
+
+p {
+    color: black;
+}
