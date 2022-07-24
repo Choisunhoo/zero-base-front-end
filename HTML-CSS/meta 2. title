@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!--<head>요소는 페이지를 열 때 브라우저에 표시되는 <body>요소와 다르게, head의 내용은 페이지에 표시되지 않습니다.
+        대신 head의 내용이 하는일은 페이지에 대한 metadata(data를 설명하는 data)를 포함하는 것입니다.-->
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!--<title> 문서 제목 요소는 브라우저의 제목 표시줄이나 페이지 탬에 보이는 문서 제목을 정의합니다.
+            텍스트만 포함할 수 있으며 태그를 포함하더라도 무시합니다.-->
+        <title>♚♚히어로즈 오브 더 스☆톰♚♚가입시$$전원 카드팩☜☜뒷면100%증정※ ♜월드오브 워크래프트♜펫 무료증정￥ 특정조건 §§디아블로3§§★공허의유산★초상화획득기회@@@ 즉시이동http://kr.battle.net/heroes/ko/</title>
+
+    </head>
+    <body>
+    </body>
+</html>
