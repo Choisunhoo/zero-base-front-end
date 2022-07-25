@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <link rel="stylesheet" href="styles\main.css">
+        <title>CSS</title>
+
+
+    </head>
+    <body>
+
+        <ul>
+            <li>
+                <a href="http://example.com" target="_blink">
+                    Example Link(com/http)
+                </a>
+            </li>
+            <li>
+                <a href="http://example.org" target="_blink">
+                    Example Link(org/http)
+                </a>
+            </li>
+            <li>
+                <a href="https://exa-mple.com">
+                    Example Link(com/https)
+                </a>
+            </li>
+            <li>
+                <a href="https://example.org">
+                    Example Link(org/https)
+                </a>
+            </li>
+        </ul>
+
+        <input type="text">
+        <input type="submit">
+        <input type="reset">
+
+    </body>
+</html>
+
+
+ /* Attribute Selector (속성 선택자) */
+
+/* 1.[attr] */
+a[target] {
+    color: hotpink;
+}
+
+/* 2. [attr=value] */
+a[href="https://example.org"] {
+    color: indigo;
+}
+
+
+input[type="submit"]{
+    background-color: green;
+}
+
+
+/* 3. [attr^=value] */
+a[href^="https://"] {
+    color: red;
+    font-style:italic
+}
+
+/* 4. [attr$=value] */
+a[href$=".com"] {
+    color: silver;
+}
+
+/* 5. [attr*=value] */
+a[href*="example"] {
+    color: sienna;
+}
+
+
