@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <link rel="stylesheet" href="styles\main.css">
+        <title>CSS</title>
+
+
+    </head>
+    <body>
+        
+        <div>
+            <input type="text" placeholder="1">
+            <input type="text" placeholder="2">
+            <input type="text" placeholder="3" disabled>
+        </div>
+
+        <div>
+            <input type="radio" name="my-input" id="yes">
+            <label for="yes">Yes</label>
+
+            <input type="radio" name="my-input" id="no">
+            <label for="no">No</label>
+        </div>
+
+        <div>
+            <input type="checkbox" name="check-me" id="check-me">
+            <label for="check-me">Check me!</label>
+        </div>
+
+    </body>
+</html>
+
+
+/* Pseudo-Class Selector (가상 클래스 선택자)
+
+    
+    enabled, disabled, checked
+*/
+
+input[type=text]:enabled {
+    background-color: skyblue;
+}
+
+input[type=text]:disabled {
+    background-color: blue;
+}
+
+input[type=radio]:checked {
+    outline: 3px solid red;
+}
+
+
+input[type=checkbox]:checked {
+    outline: 3px solid silver;
+}
+
