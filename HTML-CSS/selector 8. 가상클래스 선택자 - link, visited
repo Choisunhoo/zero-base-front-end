@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <link rel="stylesheet" href="styles\main.css">
+        <title>CSS</title>
+
+
+    </head>
+    <body>
+        
+        <span>Example Link</span>
+        <a href="http://example.com">Example Link</a>
+
+    </body>
+</html>
+
+
+/* Pseudo-Class Selector (가상 클래스 선택자)
+
+    방문여부에 따른 색변경을 할 수 있는 css 코드
+    link, visited
+*/
+
+
+a:link {
+    color:yellowgreen;
+}
+
+a:visited{
+    color: palegoldenrod;
+}
