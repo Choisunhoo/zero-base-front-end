@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <link rel="stylesheet" href="styles\main.css">
+        <title>CSS</title>
+
+
+    </head>
+    <body>
+        
+        <form>
+            <input type="text" placeholder="name"">
+            <input type="email" placeholder="email"">
+            <input class="pw" type="password" placeholder="password">
+            <input type="submit">
+        </form>
+
+    </body>
+</html>
+
+
+/* Pseudo-Class Selector (가상 클래스 선택자)
+    :not()
+*/
+
+
+input:not([type=password]){
+    background-color: indianred;
+}
