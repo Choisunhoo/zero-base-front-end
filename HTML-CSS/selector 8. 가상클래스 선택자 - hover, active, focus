@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <link rel="stylesheet" href="styles\main.css">
+        <title>CSS</title>
+
+
+    </head>
+    <body>
+        
+        <input type="button" value="저를 클릭하세요!">
+        <input type="button" value="저를 클릭하세요!">
+        <input type="button" value="저를 클릭하세요!">
+        <input type="button" value="저를 클릭하세요!">
+        <input type="button" value="저를 클릭하세요!">
+        <input type="text">
+
+    </body>
+</html>
+
+
+/* Pseudo-Class Selector (가상 클래스 선택자)
+
+    유저가 마우스를 올리거나 클릭할 대상을 위한 CSS코드
+    hover, active, focus
+*/
+
+
+input[type=button]{
+    background-color: skyblue;
+    border: none;
+}
+
+input[type=button]:hover {
+    background-color: red;
+    color: white;
+}
+
+input[type=button]:active {
+    background-color: blue;
+}
+
+input[type=button]:focus {
+    background-color: white;
+}
