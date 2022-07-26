@@ -34,7 +34,7 @@
 
 /* Selector Combinators (선택자 결합)
 
-    하위, 자식, 형제 선택자, 그룹화
+    하위( ), 자식(>), 형제 선택자, 그룹화
 */
 
 #list > li:last-of-type {
