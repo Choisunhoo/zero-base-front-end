@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <link rel="stylesheet" href="styles\main.css">
+        <title>CSS</title>
+
+
+    </head>
+    <body>
+
+        <h2>Movie List</h2>
+        <section>
+            <div>Toy Story</div>
+            <p>Zootopia</p>
+            <p>Inside Out</p>
+            <div>Coco</div>
+            <p>Finding Nemo</p>
+        </section>
+
+    </body>
+</html>
+
+
+/* Pseudo-Class Selector (가상 클래스 선택자)
+fir-child VS first-of-type */
+
+/* 1. : first-of-type */
+p:first-of-type{
+    color: red;
+}
+
+/* 2. : last-of-type */
+p:last-of-type{
+    color: blue;
+}
+
+/* 3. : nth-of-type() */
+p:nth-of-type(even) {
+    color: darkgray;
+}
