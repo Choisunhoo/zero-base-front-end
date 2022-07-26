@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <style>
+            #box {color: red;}
+        </style>
+
+        <meta charset="UTF-8"/>
+        <link rel="stylesheet" href="styles\main.css">
+        <title>CSS</title>
+
+
+    </head>
+    <body>
+        
+        <div id="box" class="class-box" style="color:green">
+            Box
+        </div>
+
+    </body>
+</html>
+
+
+/* 
+    우선순위
+
+    1. 선언된 곳 
+    2. 명시도 (범위가 적을수록 명시도가 높은 것!)
+    3. 코드 위치
+*/
+
+
+#box {
+    color: blue;
+}
+
+
+.class-box {
+    color: red;
+}
+
+
+div {
+    color: purple !important;
+}
+
+/*
+
+
+!important > inline style> ID > Class/Attribute/Pseudo Class > Type (tag) > universal(*) > inherited
+*/
