@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <link rel="stylesheet" href="styles\main.css">
+        <title>CSS</title>
+
+
+    </head>
+    <body>
+        
+        <p class="lorem">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit ex, illum a placeat excepturi in perspiciatis nam, cupiditate cum eveniet officiis ea provident quos delectus vero fugit quae voluptatem repudiandae!
+        </p>
+        <p class="lorem">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit ex, illum a placeat excepturi in perspiciatis nam, cupiditate cum eveniet officiis ea provident quos delectus vero fugit quae voluptatem repudiandae!
+        </p>
+        <p class="lorem">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit ex, illum a placeat excepturi in perspiciatis nam, cupiditate cum eveniet officiis ea provident quos delectus vero fugit quae voluptatem repudiandae!
+        </p>
+
+    </body>
+</html>
