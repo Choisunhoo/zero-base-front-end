@@ -21,3 +21,24 @@
 
     </body>
 </html>
+
+
+/* Pseudo-Element Selector (가상 요소 선택자)
+
+    first-letter, first-line, selection
+*/
+
+.lorem::first-line {
+    color: red;
+    font-size: 30px;
+}
+
+.lorem::before {
+    content: 'BEFORE';
+}
+
+
+.lorem::selection {
+    background-color: blue;
+    color: white;
+}
