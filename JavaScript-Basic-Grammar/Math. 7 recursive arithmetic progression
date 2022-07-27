@@ -1,0 +1,40 @@
+// 점화식 
+// 점화식이란 수열에서 이웃하는 두개의 항 사이에 성립하는 관계를 나타낸 관계식 
+
+
+// 등차수열 예제 (1)
+
+let reuslt;
+
+function forloop(s, t, number) {
+    let acc = 0;
+
+    for (let i = 1; i <= number; i++) {
+        if (i == 1)
+            acc += s;
+        else
+            acc += t;
+
+        console.log(i, acc);
+    }
+    return acc;
+}
+
+result = forloop(3, 2, 5);
+console.log(result);
+
+
+// 등차수열 예제 (2)
+
+let result_2;
+
+function recursive(s, t, number) {
+    if (number == 1){
+        return s;
+    }
+
+    return recursive(s, t, number - 1) + t;
+}
+
+result_2 = recursive(3, 2, 5);
+console.log(result_2);
