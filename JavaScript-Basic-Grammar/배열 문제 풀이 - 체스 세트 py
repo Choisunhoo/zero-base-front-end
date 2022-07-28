@@ -1,0 +1,13 @@
+input = [  [0, 1, 2, 2, 2, 7],
+  [2, 1, 2, 1, 2, 1],
+  [0, 1, 1, 5, 3, 6]]
+
+
+for i in range(len(input)):
+    check = [1, 1, 2, 2, 2, 8] 
+    answer = []
+    
+    for j in range(6):
+        answer.append(check[j] - input[i][j])
+    
+    print(answer)
