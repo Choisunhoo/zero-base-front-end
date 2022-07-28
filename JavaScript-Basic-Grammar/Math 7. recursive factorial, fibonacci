@@ -1,0 +1,26 @@
+let result_fac; 
+
+function recursive_factorial(number) {
+    if (number == 1) {
+        return number;
+    }
+
+    return recursive_factorial(number - 1) * number; 
+}
+
+result_fac = recursive_factorial(5)
+console.log(result_fac) // output: 120
+
+
+let result_fibo;
+
+function recursive_fibonacci(number) {
+    if (number == 1 || number == 0){
+        return number;
+    }
+
+    return recursive_fibonacci(number - 1) + recursive_fibonacci (number - 2)
+}
+
+result_fibo = recursive_fibonacci(5);
+console.log(result_fibo); // output: 5
