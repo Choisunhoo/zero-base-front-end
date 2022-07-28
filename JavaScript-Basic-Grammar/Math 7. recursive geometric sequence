@@ -1,0 +1,35 @@
+// 등비수열 예제 (1)
+
+let result; 
+
+function forloop(s, t, number) {
+    let acc = 1; 
+
+    for (let i = 1; i <= number; i++) {
+        if (i == 1)
+            acc *= s;
+        else 
+            acc *= t;
+
+        console.log(i, acc);
+    }
+
+    return acc;
+}
+
+result = forloop(3, 2, 5);
+console.log(result);
+
+
+// 등비수열 예제 (2)
+let result_2;
+function recursive(s, t, number) {
+    if (number == 1) {
+        return s;
+    }
+
+    return recursive(s, t, number - 1) * t;
+}
+
+result_2 = recursive(3, 2, 5);
+console.log(result_2); // output: 48
