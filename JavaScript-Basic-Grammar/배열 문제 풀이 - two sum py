@@ -1,0 +1,19 @@
+input = [ 
+         [[2, 7, 11, 15], 9],
+         [[3, 2, 4], 6],
+         [[3, 3,], 6]
+        ]
+
+
+
+for i in range(len(input)):
+    data = input[i][0]
+    num = input[i][1]
+    answer = []
+    for j in range(len(data)):
+        for k in range(j+1, len(data)):
+            if data[k] + data[j] == num:
+                answer.append(j)
+                answer.append(k)
+    
+    print(answer)      
