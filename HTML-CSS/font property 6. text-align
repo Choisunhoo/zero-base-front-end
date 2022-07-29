@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style/main.css"/>
+        <title>CSS</title>
+    </head>
+    <body>
+        <div class="container">
+            <p class="block">
+                Lorem ipsum dolor sit amet 
+            </p>
+            <span class="inline">
+                Lorem ipsum dolor sit amet 
+            </span>
+        </div>
+
+    </body>
+</html>
+
+/*
+폰트/ 텍스트 관련 속성
+
+text-align (left, right, center)
+*/
+
+
+p, span {
+    background-color: rosybrown;
+}
+
+.block {
+    text-align: right ; 
+}
+
+.inline {
+    text-align: right ; 
+}
+
+
+/* 인라인 요소는 text-align 으로 변경이 안되지만 이를 감싸고 있는 div 태그를 지정해서 text align 하면 div의 하위에 있는 자식들은 반영된다.
+*/
+
+.container{
+    text-align: center;
+}
