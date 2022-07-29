@@ -1,0 +1,18 @@
+input = [ 
+         [129, 137],
+         [1412, 1918],
+         [4159, 9182]
+        ]
+
+
+
+for i in range(len(input)):
+    answer = [0] * 10
+    for j in range(input[i][0], input[i][1] + 1):
+        nums = str(j)
+        nums = list(nums)
+        for num in nums:
+            num = int(num)
+            answer[num] += 1
+            
+    print(answer)
