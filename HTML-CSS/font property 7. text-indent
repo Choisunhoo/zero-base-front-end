@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style/main.css"/>
+        <title>CSS</title>
+    </head>
+    <body>
+        <div class="container">
+            <p class ="paragraph1">
+                Lorem ipsum dolor sit amet consectetur adipiscing elit. Saepe officia qui, voluptatem sunt, eos, quia nesciunt tenetur voluptas quas ex exercitationem tempora nulla blanditiis incidunt recusandae corporis sed. Eligendi, temporibus!
+            </p>
+            <p class ="paragraph2">
+                Lorem ipsum dolor sit amet consectetur adipiscing elit. Saepe officia qui, voluptatem sunt, eos, quia nesciunt tenetur voluptas quas ex exercitationem tempora nulla blanditiis incidunt recusandae corporis sed. Eligendi, temporibus!
+            </p>
+            <p class ="paragraph3">
+                Lorem ipsum dolor sit amet consectetur adipiscing elit. Saepe officia qui, voluptatem sunt, eos, quia nesciunt tenetur voluptas quas ex exercitationem tempora nulla blanditiis incidunt recusandae corporis sed. Eligendi, temporibus!
+            </p>
+            <span class="inline">
+                Lorem ipsum dolor sit amet consectetur adipiscing elit. Saepe officia qui, voluptatem sunt, eos, quia nesciunt tenetur voluptas quas ex exercitationem tempora nulla blanditiis incidunt recusandae corporis sed. Eligendi, temporibus!
+            </span>
+        </div>
+
+    </body>
+</html>
+
+/*
+폰트/ 텍스트 관련 속성
+
+text-indent (들여쓰기)
+block 요소만 적용이 가능하고 inline 요소에는 적용이 불가능하다
+*/
+
+
+.paragraph1 {
+    text-indent: 20px;
+}
+
+.container {
+    text-indent: 50px;
+}
+
+.inline {
+    text-indent: 60px;
+}
