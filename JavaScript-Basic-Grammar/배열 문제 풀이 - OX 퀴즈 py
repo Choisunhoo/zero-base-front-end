@@ -1,0 +1,21 @@
+input = [ 
+         [1, 0, 1, 1, 1, 0, 1, 1, 0, 0],
+         [1, 1, 0, 1, 1, 0, 1, 1, 1, 1],
+         [1, 1, 1, 1, 1, 0, 0, 1, 1, 0] 
+        ]
+
+
+
+for i in range(len(input)):
+    data = input[i]
+    answer = 0 
+    cnt = 0 
+    
+    for num in data:
+        if num == 0: 
+            cnt = 0 
+        else:
+            cnt += 1 
+            answer += cnt
+    
+    print(answer)      
