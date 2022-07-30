@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style/main.css"/>
+        <title>CSS</title>
+    </head>
+    
+    <body>
+        <div class="parent">
+            <div class="child"></div>
+        </div>
+    </body>
+</html>
+
+
+/*
+단위와 값
+
+상대길이 - %
+*/
+
+body {
+    margin: 0;
+}
+
+.parent {
+    width: 50%;
+    height: 100px;
+    background-color: blue;
+}
+
+.child {
+    width: 50%;
+    height: 30px;
+    background-color: indianred;
+}
