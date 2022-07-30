@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style/main.css"/>
+        <title>CSS</title>
+    </head>
+    <body>
+        <div class="container">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipiscing elit. Saepe officia qui, voluptatem sunt, eos, quia nesciunt tenetur voluptas quas ex exercitationem tempora nulla blanditiis incidunt recusandae corporis sed. Eligendi, temporibus!
+            </p>
+    </body>
+</html>
+
+/*
+단위와 값
+
+절대길이 - px, in, pt
+브라우저에서 글꼴 크기를 변경을 해도 변화 없음 
+*/
+
+p {
+    font-size: 24 px
+}
