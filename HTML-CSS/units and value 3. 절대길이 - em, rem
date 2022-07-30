@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style/main.css"/>
+        <title>CSS</title>
+    </head>
+    <body>
+        <div class="parent">
+            안녕!
+            <div class="child">
+                안녕!
+            </div>
+            
+    </body>
+</html>
+
+
+/*
+단위와 값
+
+상대길이 - em, rem
+*/
+
+
+/* lem === 부모의 font-size */
+/* 1rem === root의 font-size */
+.parent {
+    color: blue;
+    font-size: 3rem;
+}
+
+.child {
+    color: red;
+    font-size: 1.5em;
+}
