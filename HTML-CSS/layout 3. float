@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style/main.css"/>
+        <title>CSS</title>
+    </head>
+    <body>
+
+        <div class="container">
+            <div class="image"></div>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipiscing elit. Saepe officia qui, voluptatem sunt, eos, quia nesciunt tenetur voluptas quas ex exercitationem tempora nulla blanditiis incidunt recusandae corporis sed. Eligendi, temporibus!
+            </p> 
+        </div>
+        
+    </body>
+</html>
+
+/*
+레이아웃 
+
+float: 은 한 요소가 보통 흐름(normal flow)으로부터 빠져 텍스트 및 인라인(inline) 요소가 그 주위를 감싸는 자기 컨테이너의 좌우측을 따라 배치되어야 함을 지정합니다.
+*/
+
+
+
+.container {
+    border: solid;
+    width: 300px;
+    margin-left: 100px;
+}
+
+.image {
+    width: 100px; 
+    height: 100px;
+
+    background-color: hotpink;
+    border: 2px solid blue;
+
+    float: left;
+    margin: 10px;
+}
