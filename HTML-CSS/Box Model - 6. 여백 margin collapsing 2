@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style/main.css"/>
+        <title>CSS</title>
+    </head>
+    <body>
+
+        <div id="parent">
+            <div id="child"></div>
+        </div>  
+          
+    </body>
+</html>
+
+/*
+박스 모델(Box Model)
+
+마진 상쇄(margin collapsing): 야러 블록 요소들의 위/아래 margin이 경우에 따라 가장 큰 크기를 가진 margin으로 결합(싱쇄)되는 현상 
+*/
+
+
+body {
+    margin: 0;
+}
+
+#parent {
+    width: 100px;
+    height: 100px;
+
+    margin-top: 30px;
+
+    background-color: cadetblue;
+}
+
+#child {
+    width: 30px;
+    height: 30px;
+
+    margin-top: 40px;
+
+    background-color: indianred;
+}
