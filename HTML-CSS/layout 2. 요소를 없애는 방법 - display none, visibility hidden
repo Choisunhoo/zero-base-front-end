@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style/main.css"/>
+        <title>CSS</title>
+    </head>
+    <body>
+
+        <div class="box1">Lorem ipsum dolor sit amet consectetur adipiscing elit. Saepe officia qui, voluptatem sunt, eos, quia nesciunt tenetur voluptas quas ex exercitationem tempora nulla blanditiis incidunt recusandae corporis sed. Eligendi, temporibus!</div> 
+        <div class="box2">Lorem ipsum dolor sit amet consectetur adipiscing elit. Saepe officia qui, voluptatem sunt, eos, quia nesciunt tenetur voluptas quas ex exercitationem tempora nulla blanditiis incidunt recusandae corporis sed. Eligendi, temporibus!</div> 
+        <div class="box3">Lorem ipsum dolor sit amet consectetur adipiscing elit. Saepe officia qui, voluptatem sunt, eos, quia nesciunt tenetur voluptas quas ex exercitationem tempora nulla blanditiis incidunt recusandae corporis sed. Eligendi, temporibus!</div> 
+          
+    </body>
+</html>
+
+
+/*
+레이아웃 
+
+요소를 없애는 방법 -
+display: none(아에 없에는 것), visibility: hidden (이 부분을 공백으로 하는 것)
+*/
+
+
+div {
+    height: 200px;
+    border: solid;
+}
+
+.box2 {
+    visibility: hidden;
+}
+
+.box1 {
+    background-color: darkorange;
+}
+
+.box2 {
+    background-color: greenyellow;
+}
+
+.box3 {
+    background-color: dodgerblue;
+}
+
