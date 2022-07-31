@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style/main.css"/>
+        <title>CSS</title>
+    </head>
+    <body>
+
+        <div class="block">
+            Lorem ipsum dolor sit amet consectetur adipiscing elit. Saepe officia qui, voluptatem sunt, eos, quia nesciunt tenetur voluptas quas ex exercitationem tempora nulla blanditiis incidunt recusandae corporis sed. Eligendi, temporibus!
+        </div>
+
+        <span class="inline">
+            Lorem ipsum dolor sit amet consectetur adipiscing elit. Saepe officia qui, voluptatem sunt, eos, quia nesciunt tenetur voluptas quas ex exercitationem tempora nulla blanditiis incidunt recusandae corporis sed. Eligendi, temporibus!
+        </span>
+    </body>
+</html>
+
+/*
+박스 모델(Box Model)
+
+크기 - width: 속성은 요소의 너비를 설정합니다. 기본값은 콘텐츠 영역의 너비이지만, box-sizing이 border-box라면 테두리 영역의 너비를 설정합니다. 
+      height: 속성은 요소의 높이를 지정합니다. 기본값은 콘텐츠 영역의 높이이지만, box-sizing이 border-box라면 테두리 영역의 높이를 설정합니다.
+
+block 요소는 지정된 width 와 height에 따라서 변경되지만 inline 요소는 할당된 값만 적용된다
+*/
+
+
+.block {
+    width: 300px;
+    height: 100px;
+    background-color: wheat;
+}
+
+.inline {
+    width: 300px;
+    height: 100px;
+    background-color: yellowgreen;
+}
