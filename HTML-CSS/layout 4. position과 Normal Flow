@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style/main.css"/>
+        <title>CSS</title>
+    </head>
+    <body>
+
+        <div></div>
+        <div></div>
+        <p>
+            <span>1</span>
+            <span>2</span>
+            <span>3</span>
+        </p>
+        <div></div>
+        <div></div>
+        <div></div>
+
+    </body>
+</html>
+
+/*
+레이아웃
+
+position: 속성은 문서 상에 요소를 배치하는 방법을 지정합니다. top, right, bottom, left 속성이 요소를 배치할 최종 위치를 결정합니다.
+
+*/
+
+
+div {
+    width: 100px;
+    height: 100px;
+    border: solid;
+}
