@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style/main.css"/>
+        <title>CSS</title>
+    </head>
+    <body>
+
+        <div>
+            Lorem ipsum dolor sit amet consectetur adipiscing elit. Saepe officia qui, voluptatem sunt, eos, quia nesciunt tenetur voluptas quas ex exercitationem tempora nulla blanditiis incidunt recusandae corporis sed. Eligendi, temporibus!
+        </div>
+        <div class="floating-box">
+            안녕하세요~!
+        </div>
+    </body>
+</html>
+
+
+/*
+
+color 
+
+opacity 속성은 요소의 불투명도를 설정합니다. 불투명도는 요소 뒤쪽 콘텐츠가 숨겨지는 정도로, 투명도의 반대입니다. 
+*/
+
+
+.floating-box {
+    width: 150px;
+    height: 150px;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    background-color: cadetblue;
+    opacity:0.5;
+}
