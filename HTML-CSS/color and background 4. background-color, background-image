@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style/main.css"/>
+        <title>CSS</title>
+    </head>
+    <body>
+
+        <div>
+            Lorem ipsum dolor sit amet consectetur adipiscing elit. Saepe officia qui, voluptatem sunt, eos, quia nesciunt tenetur voluptas quas ex exercitationem tempora nulla blanditiis incidunt recusandae corporis sed. Eligendi, temporibus!
+        </div>
+        <div class="floating-box">
+            안녕하세요~!
+        </div>
+    </body>
+</html>
+
+/*
+
+color 
+
+background-color, background-image
+*/
+
+
+.floating-box {
+    width: 1000px;
+    height: 1000px;
+    position: fixed;
+
+    top: 10px;
+    left: 10px;
+
+    background-color: royalblue;
+    background-image: url("https://file.mk.co.kr/mkde_7/N0/2020/09/20200917_4625890_1600323998.jpeg");
+}
