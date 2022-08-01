@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style/main.css"/>
+        <title>CSS</title>
+    </head>
+    <body>
+
+        <div class ="box">
+            Pieter Cornelis Mondriaan (Dutch: [ˈpitər kɔrˈneːlɪs ˈmɔndrijaːn]), after 1906 Piet Mondrian (/piːt ˈmɒndriɑːn/, also US: /- ˈmɔːn-/, Dutch: [pit ˈmɔndrijɑn]; 7 March 1872 – 1 February 1944), was a Dutch painter and art theoretician who is regarded as one of the greatest artists of the 20th century. He is known for being one of the pioneers of 20th-century abstract art, as he changed his artistic direction from figurative painting to an increasingly abstract style, until he reached a point where his artistic vocabulary was reduced to simple geometric elements.
+
+Mondrian's art was highly utopian and was concerned with a search for universal values and aesthetics. He proclaimed in 1914: "Art is higher than reality and has no direct relation to reality. To approach the spiritual in art, one will make as little use as possible of reality, because reality is opposed to the spiritual. We find ourselves in the presence of an abstract art. Art should be above reality, otherwise it would have no value for man." His art, however, always remained rooted in nature.
+
+He was a contributor to the De Stijl art movement and group, which he co-founded with Theo van Doesburg. He evolved a non-representational form which he termed Neoplasticism. This was the new 'pure plastic art' which he believed was necessary in order to create 'universal beauty'. To express this, Mondrian eventually decided to limit his formal vocabulary to the three primary colors (red, blue and yellow), the three primary values (black, white and gray) and the two primary directions (horizontal and vertical). Mondrian's arrival in Paris from the Netherlands in 1911 marked the beginning of a period of profound change. He encountered experiments in Cubism and with the intent of integrating himself within the Parisian avant-garde removed an 'a' from the Dutch spelling of his name (Mondriaan).
+        </div>
+
+    </body>
+</html>
+
+/*
+
+background 
+ 
+backgroud: 단축 속성은 색상, 이미지, 원점, 크기, 반복 등 여러 배경 스타일을 한번에 지정합니다.
+
+*/
+
+
+.box {
+    height: 500px;
+
+    border: cornflowerblue 5px solid;
+
+    background: cadetblue no-repeat center/80% url("https://file.mk.co.kr/mkde_7/N0/2020/09/20200917_4625890_1600323990.jpeg");
+
+}   
