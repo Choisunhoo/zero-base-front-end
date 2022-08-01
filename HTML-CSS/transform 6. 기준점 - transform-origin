@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style/main.css"/>
+        <title>CSS</title>
+    </head>
+    <body>
+
+        <img id="girl"src="https://www.jungle.co.kr/image/2a13597b4aac9e705e03c201" >
+
+        <div>Girl with Balloon (also, Balloon Girl or Girl and Balloon) is a 2002-started London series of stencil murals by the graffiti artist Banksy, depicting a young girl with her hand extended toward a red heart-shaped balloon carried away by the wind. The locations for this work include Waterloo Bridge, and other murals were around London, though none remain there. Banksy has several times used variants of this design to support social campaigns: in 2005 about the West Bank barrier, in 2014 about the Syrian refugee crisis, and also about the 2017 UK election. A 2017 Samsung poll ranked Girl with Balloon as the United Kingdom's number one favourite artwork.
+             In 2018, a framed copy of the work spontaneously shredded during an auction, by way of a mechanical device Banksy had hidden in the frame. Banksy confirmed that he was responsible for the shredding and gave the altered piece a new name, Love is in the Bin. Sotheby's said it was "the first work in history ever created during a live auction."</div>
+    </body>
+</html>
+
+/*
+
+transform 
+
+transform: 속성으로 요소에 회전, 크기 조절, 기울이기, 이동 효과를 부여할 수 있습니다. transform은 CSS시각적 서식 모델의 좌표 공간을 변경합니다.
+
+기준점 - transform-origin
+*/
+
+
+#girl {
+    width: 600px;
+    margin: 100px;
+
+    transform: scale(1.3) rotate(12deg) ; 
+    transform-origin: top left;
+}
