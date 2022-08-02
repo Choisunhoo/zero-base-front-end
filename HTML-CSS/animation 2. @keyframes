@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style/main.css"/>
+        <title>CSS</title>
+    </head>
+    <body>
+
+        <div class="box">
+            ☺️ 
+        </div>
+    </body>
+</html>
+
+/*
+
+Animation
+
+@keyframes: 개발자가 애니메이션 중간중간의 특정 지점들을 거칠 수 있는 키프레임들을 설정함으로써 CSS
+           애니메이션 중간 절차를 제어할 수 있게 합니다. 이 룰은 브라우저가 자동으로 애니메이션을 처리하는 것 보다 더 
+           세밀하게 중간 동작들을 제어할 수 있습니다. 
+*/
+
+
+.box {
+    width: 100px;
+    height: 100px;
+    border: 10px solid seagreen;
+    background-color: rgb(204, 253, 225);
+    border-radius: 30px;
+
+}
+
+.box:hover {
+    animation: my-first-animation 3s infinite; 
+}
+
+@keyframes my-first-animation {
+    0% {
+        font-size: 20px;
+    }
+    50% {
+        width: 300px;
+        font-size: 80px;
+    }
+    100% {
+        font-size: 20px;
+    }
+
+}
