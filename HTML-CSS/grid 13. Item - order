@@ -26,7 +26,7 @@
 
 grid
 
-Item - grid-area
+Item - grid-order
 */
 
 .container {
