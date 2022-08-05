@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style/main.css"/>
+        <title>CSS</title>
+    </head>
+    <body>
+
+        <div class="container">
+            <div class="item header">header</div>
+            <div class="item main">main</div>
+            <div class="item sidebar">sidebar</div>
+            <div class="item footer">footer</div>
+
+        </div>
+
+    </body>
+</html>
+
+/*
+
+grid
+
+Container - grid-template-areas
+
+*/
+
+.container {
+    border: 5px dashed orange;
+    display: grid;
+    width: 400px;
+    height: 400px;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows:  repeat(3, 1fr);
+    grid-template-areas: 
+      "hd hd hd hd hd"
+      "ma ma ma sb sb"
+      "ft ft ft ft ft"
+    ;
+
+}
+
+.item {
+    background-color:  paleturquoise;
+    border: 3px solid blue;
+    font-size: 20px;
+}
+
+.header {
+    grid-area: hd;
+}
+
+.main {
+    grid-area: ma;
+}
+
+.sidebar {
+    grid-area: sb;
+}
+
+.footer {
+    grid-area: ft;
+}
