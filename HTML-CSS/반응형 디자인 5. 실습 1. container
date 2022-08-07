@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style/main.css">
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <body>
+        <div class="container">
+            <nav>Navigation Bar</nav>
+            <div class>"box-container</div>
+            <!--box...-->
+            <div class="box">박스1</div>
+            <div class="box">박스2</div>
+            <div class="box">박스3</div>
+            <div class="box">박스4</div>
+            <div class="box">박스5</div>
+            <div class="box">박스6</div>
+            <footer>Footer</footer>
+        </div>
+    </body>
+</html>
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: aliceblue;
+}
+
+.container {
+    background-color: rgb(77, 146, 207);
+    max-width: 768px;
+    min-height: 100vh;
+    margin: 0 auto;
+}
+
+.box {
+    border: 3px solid orangered;
+}
