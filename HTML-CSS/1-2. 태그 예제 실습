@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style/main.css">
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <body>
+        <!-- 구역을 나눔 section, div-->
+       <section>section</section> 
+       <div>div</div>
+        <!-- 문단을 나눔 p-->
+       <p>Banksy is a pseudonymous England-based street artist, political activist and film director whose real name and identity remain unconfirmed and the subject of speculation. Active since the 1990s, his satirical street art and subversive epigrams combine dark humour with graffiti executed in a distinctive stenciling technique. His works of political and social commentary have appeared on streets, walls and bridges throughout the world. Banksy's work grew out of the Bristol underground scene, which involved collaborations between artists and musicians. Banksy says that he was inspired by 3D, a graffiti artist and founding member of the musical group Massive Attack.</p>
+       <!-- 이미지 태그 -->
+       <img src="https://sothebys-md.brightspotcdn.com/dims4/default/4d38b70/2147483647/strip/true/crop/2000x2000+0+0/resize/2048x2048!/quality/90/?url=http%3A%2F%2Fsothebys-brightspot.s3.amazonaws.com%2Fmedia-desk%2Fdc%2F7e%2F7d3d6c6d434cb5e5824af4b3d410%2Fl21010-bwyhz-01.jpg" alt="girlwithballoon">
+       <!-- 링크 태그-->
+       <a href="https://www.google.com/search?q=banksy&rlz=1C5CHFA_enKR1017KR1017&source=lnms&tbm=isch&sa=X&ved=2ahUKEwjM0qT91Lj5AhXXp1YBHaNGBjkQ_AUoAXoECAIQAw&biw=1440&bih=795&dpr=2" target="_blank">뱅크시</a>
+       <!-- 버튼 -->
+       <button>버튼</button>
+
+       <!-- 순서가 없는 리스트-->
+       <ul>
+            <li>1</li>
+            <li>1</li>
+            <li>1</li>
+            <li>1</li>
+            <li>1</li>
+       </ul>
+       <!-- 순서가 있는 리스트-->
+       <ol>
+            <li>1</li>
+            <li>1</li>
+            <li>1</li>
+            <li>1</li>
+            <li>1</li>
+       </ol>
+
+       <!-- 라벨 과 입력할 장소 label input-->
+       <label for="input">아이디</label>
+       <input type="text" placehoder="아이디를 입력하세요" id="input">
+
+       <br>
+       <!--radio (체크)-->
+       <input type="radio" id ="female" name="gender">
+       <label for="female">여자</label>
+
+       <input type="radio" id ="male" name="gender">
+       <label for="male">남자</label>
+
+       <br>
+       <input type="checkbox" id ="chk">
+       <label for="chk">귤</label>
+       <input type="checkbox" id ="chk2">
+       <label for="chk2">사과</label>
+
+
+    </body>
+</html>
