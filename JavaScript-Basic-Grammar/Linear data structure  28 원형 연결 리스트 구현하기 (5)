@@ -10,7 +10,7 @@
 - 데이터 위치 확인/ 노드 출력: CircularLinkedList.indexOf(), CircularLinkedList.printNode()
 */
 
-// 원형 연결리스트 구현(4)
+// 원형 연결리스트 구현(5)
 
 // Node(): data와 point를 가지고 있는 객체 
 function Node(data) {
