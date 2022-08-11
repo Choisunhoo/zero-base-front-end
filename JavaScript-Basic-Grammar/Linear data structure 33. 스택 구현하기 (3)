@@ -1,0 +1,105 @@
+// * linguist-vendored
+// *.javascript linguist-vendored=false
+
+
+/*스택 (Stack)
+  나중에 넣은 데이터가 먼저 나오는 LIFO(Last In First Out) 기반의 선형 자료 구조 
+  구현 메서드(method)
+  - 데이터 전체 획득 / 비어있는지 확인: Stack.getBuffer(), Stack.isEmpty()
+  - 추가 / 삭제 / 마지막 데이터 조회 / 크기 확인: Stack.push(), Stack.pop(), Stack.peak(), Stack.size()
+  - 데이터 위치 / 존재 여부 확인: Stack.indexOf(), Stack.includes()
+*/
+
+// 스택 구현 (2)
+
+// Stack(): 생성자 함수로 초기 데이터 설정 
+function Stack(array) {
+  this.array = array ? array : [];
+}
+
+// getBuffer(): 객체 내 데이터 셋 변환
+Stack.prototype.getBuffer = function () {
+  return this.array.slice();
+};
+
+// isEmpty(): 객체 내 데이터 존재 여부 파악 
+Stack.prototype.isEmpty = function () {
+  return this.array.length == 0;
+};
+
+// let stack = new Stack([1, 2, 3]);
+// console.log(stack); // output: Stack { array: [1, 2, 3]}
+
+// let data = stack.getBuffer();
+// console.log(data === stack.array); // output: false
+// console.log(data); // output: [ 1, 2, 3 ]
+
+// console.log(stack.isEmpty()); // output: false
+
+// console.log(Object.getOwnPropertyDescriptors(Stack.prototype));
+
+
+
+// 스택 구현 (2)
+
+// push(): 데이터 추가 
+Stack.prototype.push = function (element) {
+  return this.array.push(element);
+};
+
+// pop(): 데이터 삭제
+Stack.prototype.pop = function (element) {
+  return this.array.pop();
+};
+
+// peek(): 가장 끝 데이터 반환
+Stack.prototype.peek = function (element) {
+  return this.array[this.array.length-1];
+};
+
+// size(): 스택 내 데이터 개수 확인
+Stack.prototype.size = function () {
+  return this.array.length;
+};
+
+
+// let stack = new Stack([1, 2]);
+
+// console.log(stack); // Stack { array : [ 1, 2 ]}
+// stack.push(3);
+// console.log(stack); // Stack { array : [ 1, 2, 3 ]}
+
+// console.log(stack.pop()); // output: 3
+// console.log(stack.pop()); // output: 2
+// console.log(stack.peek()); // output: 1
+// console.log(stack.size()); // output: 1
+
+
+// 스택 구현 (3)
+
+
+// indexOf(): 데이터 위치 값 조회 
+Stack.prototype.indexOf = function (element, position = 0) {
+  for (let i = position; i < element; i++) {
+    if (element == this.array[i]) return i;
+  }
+
+  return -1;
+};
+
+
+// includes(): 데이터 존재 여부 확인 
+Stack.prototype.includes = function (element, position = 0) {
+  for (let i = position; i < element; i++) {
+    if (element == this.array[i]) return true;
+  }
+
+  return false;
+};
+
+let stack = new Stack([1, 2, 3]);
+
+console.log(stack.indexOf(1)); // output: 0
+console.log(stack.indexOf(1, 2)); // output: -1
+console.log(stack.includes(1)); // output: true
+console.log(stack.includes(1, 2)); // output: false 
