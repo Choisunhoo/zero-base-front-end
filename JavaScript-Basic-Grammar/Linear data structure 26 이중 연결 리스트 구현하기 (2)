@@ -11,7 +11,7 @@
 - 데이터 위치 확인: LinkedList.indexOf()
 */
 
-// 이중 연결리스트 구현(1)
+// 이중 연결리스트 구현(2)
 
 //Node(): data와 point인 next, prev를 가지고 있는 객체 
 function Node(data) {
