@@ -1,0 +1,54 @@
+* linguist-vendored
+*.javascript linguist-vendored=false
+
+
+// Queue(): 생성자 함수로 초기 데이터 설정 
+function Queue(array) {
+  this.array = array ? array : [];
+}
+
+// getBuffer(): 객체 내 데이터 셋 반환
+Queue.prototype.getBuffer = function () {
+  return this.array.slice();
+};
+
+// isEmpty(): 객체 내 데이터 존재 여부 파악
+Queue.prototype.isEmpty = function () {
+  return this.array.length == 0;
+};
+
+// let queue = new Queue([1, 2, 3]);
+
+// console.log(queue); // output: queue { array: [ 1, 2, 3 ] }
+
+// let data = queue.getBuffer();
+// console.log(data === queue.array); // output: false
+// console.log(data); // output: [1, 2, 3]
+
+// console.log(queue.isEmpty()); // output: false
+
+// console.log(Object.getOwnPropertyDescriptors(Queue.prototype))
+
+
+// 큐 구현 (2)
+
+// enqueue(): 데이터 추가 
+Queue.prototype.enqueue = function (element) {
+  return this.array.push(element);
+};
+
+// dequeue(): 데이터 삭제
+Queue.prototype.dequeue = function () {
+  return this.array.shift();
+};
+
+let queue = new Queue([1, 2]);
+console.log(queue); // Queue { array: [ 1, 2 ]}
+
+queue.enqueue(3);
+queue.enqueue(4);
+console.log(queue); // Queue { array: [ 1, 2, 3, 4 ]}
+
+console.log(queue.dequeue()); // output: 1
+console.log(queue.dequeue()); // output: 2
+console.log(queue); // Queue { array: [ 3, 4 ]}
