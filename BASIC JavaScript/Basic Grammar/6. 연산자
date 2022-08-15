@@ -1,0 +1,52 @@
+// 연산자 (Operator) 값의 연산을 위해서 사용되는 부호
+
+var a1 = true && true; 
+console.log(a1) // output: true
+var a2 = true && false; 
+console.log(a2) // output: false
+var a3 = false && true; 
+console.log(a3) // output: false
+var a4 = false && 3 == 4; 
+console.log(a4) // output: false
+var a5 = 'Cat' && 'Dog'; 
+console.log(a5) // output: Dog
+var a6 = false && 'Cat'; 
+console.log(a6) // output: false
+var a7 = 'Cat' && false;  
+console.log(a7) // output: false
+
+
+var a1 = true || true; 
+console.log(a1) // output: true
+var a2 = true || false; 
+console.log(a2) // output: true
+var a3 = false || true; 
+console.log(a3) // output: true
+var a4 = false || 3 == 4; 
+console.log(a4) // output: false
+var a5 = 'Cat' || 'Dog'; 
+console.log(a5) // output: Cat
+var a6 = false || 'Cat'; 
+console.log(a6) // output: Cat
+var a7 = 'Cat' || false;  
+console.log(a7) // output: Cat
+
+
+var n1 = !true;
+console.log(n1) // output: false
+var n2 = !false;
+console.log(n2) // output: true
+var n3 = !'Cat';
+console.log(n3) // output: false
+
+
+const temp = 1 === '1' ? '참일때' : '거짓일때';
+
+if (1 === '1') {
+  temp2 = '참일때';
+} else {
+  temp2 = '거짓일때';
+}
+
+console.log(temp) // output:  거짓일때
+console.log(temp2) // output: 거짓일때
