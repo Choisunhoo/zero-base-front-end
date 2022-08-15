@@ -1,0 +1,23 @@
+// 변수의 종류
+var, let, const
+
+// 선언 
+let lang;
+
+// 할당 
+lang = 'JS'
+
+// 재할당
+lang = 'JS'
+
+// 선언과 동시에 할당 
+let lang = 'JavaScript'
+
+// 재할당
+lang = 'JS'
+
+
+// 복합 할당 연산자 
+let count = 0;
+count += 1;
+count = count + 1; 
