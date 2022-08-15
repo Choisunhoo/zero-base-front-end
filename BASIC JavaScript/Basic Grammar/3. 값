@@ -1,0 +1,38 @@
+// 문자열 값 (원시 값 Primitive Value: 변하지 않는 값) 
+
+let un = undefined;
+let bool = false;
+let num = '0';
+let str = '문자열';
+let nu = null;
+
+console.log(typeof un)  // output: undefined
+console.log(typeof bool)  // output: boolean
+console.log(typeof num)  // output: number
+console.log(typeof str)  // output: string
+console.log(typeof nu)  // output: object
+
+
+// 객체 (Objects)
+// 원시 값이 아닌 데이터 타입은 즉..! 레퍼런스, 객체 타입이다.
+
+let obj = {
+  name: 'park',
+}
+
+let arr = ['park']
+
+function func(){
+  return 'park'
+}
+
+
+console.log(typeof obj); // output: object
+console.log(typeof arr); // output: object
+console.log(typeof func); // output: function
+
+if (num === 0) {
+  console.log('num은 0 입니다'); 
+}  else {
+  console.log('num은 0이 아닙니다');
+}
