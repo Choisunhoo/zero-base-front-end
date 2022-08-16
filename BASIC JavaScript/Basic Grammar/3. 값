@@ -1,3 +1,6 @@
+* linguist-vendored
+*.javascript linguist-vendored=false
+
 // 문자열 값 (원시 값 Primitive Value: 변하지 않는 값) 
 
 let un = undefined;
