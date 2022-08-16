@@ -1,3 +1,6 @@
+* linguist-vendored
+*.javascript linguist-vendored=false
+
 // 변수의 종류
 var, let, const
 
