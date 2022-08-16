@@ -1,0 +1,45 @@
+* linguist-vendored
+*.javascript linguist-vendored=false
+
+// 배열
+const data = 'a';
+const num = 0 ;
+const boolean = true ;
+
+const arr = [data, num, boolean, 'name'];
+
+
+console.log(arr.length);  // output: 4
+
+console.log(arr[0]);  // output: a
+console.log(arr[1]);  // output: 0
+console.log(arr[2]);  // output: true
+console.log(arr[3]);  // output: name
+
+console.log(typeof arr);  // output: object
+
+arr[4] = 'Test';
+arr[0] = '첫번째';
+arr[1] = 'second';
+
+console.log(arr);  // output: [ '첫번째', 'second', true, 'name', 'Test' ]
+
+arr.push('마지막')
+console.log(arr);  // output:[ '첫번째', 'second', true, 'name', 'Test', '마지막' ]
+
+arr.unshift('첫번째 또 추가');
+console.log(arr);  // output:[ '첫번째 또 추가', '첫번째', 'second', true, 'name', 'Test', '마지막' ]
+
+for (let index = 0; index < arr.length; index++) {
+  const element = arr[index];
+  console.log(element);
+}
+
+// output : 첫번째 또 추가 첫번째 second true name Test 마지막
+
+
+arr.forEach(element => {
+  console.log(element);
+});
+
+// output : 첫번째 또 추가 첫번째 second true name Test 마지막
