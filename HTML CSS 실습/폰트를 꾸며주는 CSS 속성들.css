@@ -1,0 +1,13 @@
+@font-face {
+    font-family: Demiela;
+    src: url(./Demiela_FreeVersion.ttf);
+}
+
+.font {
+    font-style: italic;
+    font-weight: 900;
+    font-variant: small-caps;
+    line-height: 60px;
+    font-family: Demiela, Malgun Gothic;
+    
+}
