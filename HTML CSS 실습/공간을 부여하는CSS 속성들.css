@@ -1,0 +1,15 @@
+.container{
+    width: 200px;
+    height: 100px;
+    border: 1px solid red;
+}
+
+p {
+    margin-top: 20px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    padding: 10px;
+    border: 1px solid blue;
+    display: inline-block;
+}
