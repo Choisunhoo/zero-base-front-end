@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<htlm>
+    
+    <head>
+        <link rel="stylesheet" href="인스타그램 하트.css">
+
+        <style>
+            P {
+                margin: 0px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="wrap">
+            <div class="instagram">
+                <div class="header">
+                    <div class="header-left">
+                        <img class="header-img" src="./드보르작.jpg" width="38px" height="38px">
+                        <p>A.Dvorak</p>
+                    </div>
+                    <div class="header-right">
+                        <p class="right-menu">···</p>
+                    </div>
+                </div>
+                <div class="image">
+                    <img src="./드보르작.jpg" width="100%" height="100%">
+                </div>
+                <div class="footer">
+                    <div class="top-left">
+                        <span><svg id="heart" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                            <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
+                          </svg>
+                          <svg id="fill-heart" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
+                          </svg>
+
+                          <script>
+                            var 하트, 채워진하트;
+                            하트 = document.getElementById("heart");
+                            채워진하트 = document.getElementById("fill-heart");
+                            하트.addEventListener("click", function(){
+                                하트.style.display = "none";
+                                채워진하트.style.display = "block";
+
+                            })
+                            채워진하트.addEventListener("click", function(){
+                                채워진하트.style.display = "none";
+                                하트.style.display = "block";
+
+                            })
+                          </script>
+                        </span>
+                        <span>comment</span>
+                        <span>DM</span>
+                    </div>
+                    <div class="top-center">
+                        <ul style="display: flex; justify-content: space-between; list-style: none;">
+                            <li style="background-color: blue;"></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </div>
+                    <div class="top-right">
+                        <span>shared</span>
+                    </div>
+                    <div class="like">
+                        <p>
+                            <b>100 Likes</b>
+                        </p>
+                    </div>
+                    <div class="comment">
+                        <p><b>Lorem</b> ipsum dolor sit amet consectetur adipisicing elit. Porro eaque dignissimos inventore odio dolor ipsa nisi eligendi, aliquam, sapiente voluptas vitae repellendus qui ex facilis aperiam fugiat, reprehenderit veniam eos!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+
+</htlm>
+  
