@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        <!--전체 선택자-->
+        * {
+            color: red;
+        }
+        <!--div 태그 안에 있는 p 태그-->
+        div p {
+            color: blue;
+        }
+        <!--test class안에 있는 panda class만-->
+        .test .panda {
+            color: whitesmoke
+        }
+        <!--test 안에 있는 직계자손 panda class만-->
+        .test> .panda {
+            color: blanchedalmond
+        }
+    </style>
+</head>
+    <body>
+        <div class="test">
+            <p class="panda">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio ea repellendus, nesciunt, accusantium numquam placeat officia explicabo animi modi dicta recusandae molestias sunt accusamus necessitatibus ratione dolorum exercitationem quas mollitia!
+            </p>
+        </div>
+
+        <h1>lorem</h1>
+        <div>
+            <p class="panda">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi saepe nisi neque ducimus vitae inventore reiciendis non porro asperiores, expedita praesentium beatae, consectetur quae tempore. Eius velit blanditiis ipsam ex!</p>
+        </div>
+    </body>
+
+    <a href="https://www.naver.com/" title="Naver">네이버</a>
+    <a href="https://www.google.co.kr/" title="Google">구글</a>
+</html>
