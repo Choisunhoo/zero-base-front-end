@@ -1,0 +1,14 @@
+// 변수: 변하는 수
+// $ : 기호 + "작명": "저장할 내용";
+$primary-color: #333;
+
+body{
+    .box{
+        width: 100%;
+        background-color: white;
+        color: $primary-color;
+        &:hover{
+            background-color: $primary-color;
+        }
+    }
+}
