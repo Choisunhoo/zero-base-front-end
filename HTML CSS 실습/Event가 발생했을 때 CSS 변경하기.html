@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+        <title></title>
+        <link rel="stylesheet" href="addEventListner를 통해 Event 선택하기.css">
+    </head>
+    <body>
+        <div id="box">
+            <!-- <div class="box-overloay">
+                <p>드뷔시</p>
+                <p>mélancolique et doux</p>
+            </div> -->
+        </div>
+
+
+        <div id="box2" style="width: 100px; height: 100px; background-color: red;"></div>
+        <script>
+            // 1. js는 기원은 웹 ui를 제어하기 위한 언어였다.
+            /*
+            1. js로 제어하고 싶은 html 태그를 선택 
+            2. 어떤 이벤트가 발생했을 때 제어할 것인지 선택 
+            3. css를 변경
+            */
+            var 박스 = document.getElementById("box");
+            var 박스2 = document.getElementById("box2");
+            
+            박스.addEventListener("mouseover", function () {
+                박스.style.width = "200px";
+                박스2.style.height = "200px";
+            });
+
+            박스.addEventListener("mouseout", function () {
+                박스.style.width = "100px";
+                박스2.style.height = "100px";
+            });
+        </script>
+    </body>
+</html>
