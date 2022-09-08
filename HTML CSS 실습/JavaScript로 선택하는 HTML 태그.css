@@ -1,0 +1,42 @@
+body {
+    margin: 20px;
+}
+
+#box {
+    width: 100px;
+    height: 100px;
+    background-image: url("./드뷔시.jpg");
+    background-position: center;
+    background-size: cover;
+    border: 1px solid lightgray;
+    border-radius: 14px;
+
+    position: relative;
+}
+
+
+.box-overloay{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 14px;
+    background-color:magenta;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+.box-overloay p{
+    margin: 0px;
+    font-size: 10px;
+    color:white;
+
+}
+
+#box:hover .box-overloay{
+    opacity: 1;
+}
