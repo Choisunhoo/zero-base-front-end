@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+        <title></title>
+        <link rel="stylesheet" href="Modal - JS로 Modal창 나타내기.css">
+    </head>
+    <body>
+        <h1 id="heading">제목입니다.</h1>
+        <p>내용입니다.</p>
+        <button>수정하기</button><br/>
+        <button onclick="open_modal()">삭제하기</button>
+
+        <div class="modalDiv">
+            <div class="bg"></div>
+            <div class="modal">
+                <p>정말 삭제하시겠습니까?</p>
+                <button>취소</button>
+                <button>삭제</button>
+            </div>
+        </div>
+
+        <script>
+            /*
+            1. html/css ui를 만듭니다.
+            2. css로 숨깁니다
+            3. js로 다시 나타나게 합니다.
+            */
+
+             function open_modal() {
+                var modal_del = document.querySelector(".modalDiv");
+                modal_del.style.display = "block";
+             };
+        </script>
+    </body>
+</html>
