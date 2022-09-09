@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+        <title></title>
+
+    </head>
+    <body>
+        <h1>x : <span id="x"></span>, y : <span id="y"></span></h1>
+        
+        <script>
+
+            window.addEventListener("mousemove", 마우스추적);
+            var x = document.querySelector('#x');
+            var y = document.querySelector('#y');
+
+            function 마우스추적(event) {
+                x.innerHTML = event.clientX;
+                y.innerHTML = event.clientY;
+            }
+        </script>
+    </body>
+</html>
