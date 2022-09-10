@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 주석입니다. -->
+
+    <!-- 제목 -->
+    <!-- 연녕하세요
+    여기는 제목입니다.
+    보통 웹페이지의 주된 내용을 대표합니다.-->
+
+    <!-- 요소 = 태그 + 컨텐츠 = 여는 태그 + 컨텐츠 + 닫는 태그 -->
+    <h1>HTML 제목 Tag h1</h1>
+    <!-- 속성: 여는태그 안에 저장-->
+    <a href="https://www.google.con">구글 바로가기</a>
+    <img src="cat.jpg" alt="" width="300px" height:"300px">
+</body>
+</html>
