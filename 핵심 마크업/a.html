@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+<body>
+    <!--기본 테이블-->
+    <!--가로 헤터(기본)-->
+    <table>
+        <tr>
+            <th>메뉴</th>
+            <th>가격</th>
+            <th>평점</th>
+        </tr>
+        <tr>
+            <td>피자</td>
+            <td>16000</td>
+            <td>3.5</td>
+        </tr>
+        <tr>
+            <td>치킨</td>
+            <td>18000</td>
+            <td>4.2</td>
+        </tr>
+    </table>
+
+    <br/>
+
+    <!--세로 헤터-->
+    <table>
+        <tr>
+            <th>메뉴</th>
+            <td>피자</td>
+            <td>치킨</td>
+        </tr>
+        <tr>
+            <th>가격</th>
+            <td>16000</td>
+            <td>18000</td>
+        </tr>
+        <tr>
+            <th>평점</th>
+            <td>3.5</td>
+            <td>4.2</td>
+        </tr>
+    </table>
+
+    <br/>
+
+    <!--가로 및 세로 헤더-->
+    <table>
+        <tr>
+            <td></td>
+            <th scope="col">덕춘</th>
+            <th scope="col">춘삼</th>
+            <th scope="col">순득</th>
+            <th scope="col">복순</th>
+        </tr>
+        <tr>
+            <th scope="row">출생지</th>
+            <td>서울시 노원구</td>
+            <td>부천시 원미구</td>
+            <td>전주시 덕진구</td>
+            <td>서울시 동작구</td>
+        </tr>
+        <tr>
+            <th scope="row">나이</th>
+            <td>84</td>
+            <td>68</td>
+            <td>73</td>
+            <td>55</td>
+        </tr>
+        <tr>
+            <th scope="row">식습관</th>
+            <td>고기 위주</td>
+            <td>1일 1식</td>
+            <td>아침에 국 필수</td>
+            <td>비건</td>
+        </tr>
+    </table>
+</body>
+</html> 
+
