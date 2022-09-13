@@ -1,0 +1,57 @@
+.container {
+    position: relative;
+}
+
+.box1 {
+    position: relative;
+
+    border: 2px solid black;
+    height: 100px;
+}
+
+.box2 {
+    position: absolute;
+
+    width: 50%;
+    height: 50px;
+    background-color: bisque;
+
+    left: 20px;
+    top: 20px;
+    z-index:2;
+}
+
+.box3 {
+    position: absolute;
+
+    width: 30%;
+    height: 100px;
+
+    background-color: lightgreen;
+
+    left: 20px;
+    top: 20px;
+}
+
+p.visible{
+    overflow: visible;
+    width: 100px;
+    height: 200px;
+    background-color: cadetblue;
+}
+
+p.hidden{
+    overflow: hidden;
+    width: 100px;
+    height: 200px;
+    background-color: cadetblue;
+
+}
+
+p.scroll{
+    overflow: scroll;
+    width: 100px;
+    height: 200px;
+    background-color: cadetblue;
+
+}
