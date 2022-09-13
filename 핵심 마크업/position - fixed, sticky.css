@@ -1,0 +1,44 @@
+div {
+    border: 1px solid black;
+}
+
+div.static {
+    position: static;
+}
+
+div.relative {
+    position: relative;
+    border-color:pink;
+
+    top: 10px;
+    left: 20px;
+}
+
+div.absolute {
+    position: absolute;
+    border-color: aqua;
+
+    width: 500px;
+    height: 500px;
+
+    top: 10%;
+    right: 0;
+}
+
+
+div.fixed {
+    display: inline;
+    border-color: rebeccapurple;
+    background-color: rebeccapurple;
+    color: white;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+
+.sticky {
+    position: sticky;
+    top: 0;
+    padding: 10px;
+    background-color: magenta;
+}
