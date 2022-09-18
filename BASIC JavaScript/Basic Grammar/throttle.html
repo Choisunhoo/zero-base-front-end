@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+        <title>Document</title>
+        <style>
+            
+            div {
+                border: 1px solid black;
+                width: 500px;
+                height: 600px;
+            }
+        </style>
+        
+    </head>  
+    <body>
+        <div style="background-color: red"><h2>1</h2></div>
+        <div style="background-color: orange"><h2>2</h2></div>
+        <div style="background-color: yellow"><h2>3</h2></div>
+        <div style="background-color: green"><h2>4</h2></div>
+        <div style="background-color: blue"><h2>5</h2></div>
+        <div style="background-color: navy"><h2>6</h2></div>
+        <div style="background-color: violet"><h2>7</h2></div>
+        <div style="background-color: magenta"><h2>8</h2></div>
+    </body>
+    <script>
+        let i = 0;
+
+        window.addEventListener('scroll',
+            throttle(() => {
+                i = i + 1;
+                console.log(i);
+            }, 1000),
+        );
+
+        // 이벤트 발생이 많을 때 특정 밀리세컨드동안 이벤트를 차단하고 단 한번만 실행 시킨다
+        // 실행시킬 함수, 차단시킬 밀리세컨드
+        function throttle(callback, wait) {
+            let timeout = null;  
+            
+            // 함수가 호출시 매번 반환
+            return function (...args) {
+                const context = this;
+
+                if (!timeout) {
+                    timeout = setTimeout(() => {
+                        callback.apply(this.args);
+                        timeout = null;
+                    }, wait); 
+                }
+            };
+        }
+    </script>
+</html>
