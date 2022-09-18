@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+        <title>Document</title>
+        <style>
+            body * > * > * > * {
+                border-color: green;
+            }
+        </style>
+        
+    </head>  
+    <body>
+        <form>
+            <input type="text"/>
+        </form>
+    </body>
+    <script>
+        let i = 0;
+
+        document.querySelector('input').addEventListener('keyup',
+            debounce (() => {
+                i = i + 1;
+                console.log(i);
+            }, 1000),
+        );
+        
+        // 이벤트 발생이 많을 때 가장 마지막 이벤트만을 실행 시킨다.
+        // 마지막 호출 이후 일정 시간 이후 지연된 호출을 하도록 decounce된 함수 생성
+        
+        // 실행시킬 함수, 지연시킬 시간(밀리세컨드)
+        function debounce(callback, wait) {
+            let timeout;  // 초기 undefined
+            
+            // 함수가 호출시 매번 반환
+            return function (...args) {
+                const context = this;
+
+                clearTimeout(timeout);
+                timeout = setTimeout(() => callback.apply(context, args), wait);
+            };
+        }
+    </script>
+</html>
