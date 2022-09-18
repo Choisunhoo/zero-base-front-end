@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+        <title>Document</title>
+        <style>
+            article {
+                width: 250px;
+                height: 250px;
+                position: relative;
+                top: 100px;
+                left: 100px;
+                border: 5px solid red;
+            }
+            div {
+                width: 180px;
+                height: 180px;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                border: 5px solid orange;
+            }
+            p {
+                width: 120px;
+                height: 120px;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                border: 5px solid yellow;
+            }
+            button {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                border: 5px solid magenta;
+            }
+        </style>
+        
+    </head>  
+    <body>
+        <article>
+            ARTICLE
+            <div>
+                DIV
+                <p>
+                    P
+                    <br/>
+                    <button>Button</button>
+                </p>
+            </div>
+        </article>
+    </body>
+    <script>
+        const article = document.querySelector('article');
+        const division = document.querySelector('div');
+        const paragraph = document.querySelector('p');
+        const button = document.querySelector('button');
+
+        article.addEventListener('click', () => window.alert('article'));
+        division.addEventListener('click', () => {
+            event.stopPropagation();
+            window.alert('division');
+        });
+        
+        paragraph.addEventListener('click', () => window.alert('paragraph'));
+        button.addEventListener('click', (event) => {
+            event.stopPropagation();
+            window.alert('button');
+        }); 
+    </script>
+</html>
