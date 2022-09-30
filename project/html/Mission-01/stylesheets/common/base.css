@@ -1,0 +1,22 @@
+/* Base 스타일 작성 */
+
+.border-box{
+    box-sizing: border-box;
+}
+
+#id{
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 115%;
+}
+
+
+sub {
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 115%;
+}

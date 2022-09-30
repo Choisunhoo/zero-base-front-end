@@ -1,0 +1,120 @@
+/* CSS 작성 */
+
+p {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+#Logo {
+    position: absolute;
+    left: 321px;
+    top: 100px;
+    height: 40px;
+    width: 176px;
+}
+
+#Discovery {
+    position: absolute;
+    left: 321px;
+    top: 215px;
+
+}
+h2{
+    height: 28px;
+    position: relative;
+}
+h2>div{
+    display:inline;
+}
+#id {
+    font-size: 24px;
+    font-weight: lighter;
+}
+#divider {
+    font-size: 24px;
+    font-weight: lighter;
+    color: gray;
+    position: absolute;
+    left: 127px;
+    top: -2.5px;
+    opacity: 0.6;
+    margin-left: 13px;
+    padding-bottom: 20px;
+    
+    
+}
+#sub {
+    font-size: 16px;
+    font-weight: lighter;
+    color: gray;
+    opacity: 0.6;
+    position: absolute;
+    left: 154px;
+    top: 5.7px;
+    text-shadow: 0px 3px 4px gray;
+    
+}
+
+
+#DiscoveryList{
+    position: relative;
+    width: 1020px;
+    height: 1010px;
+    text-align: center;
+
+
+}
+
+.CardLinkColumn2 {
+    position:relative;
+    border: 1px solid rgba(128, 128, 128, 0.5);
+    width: 499px;
+    height: 307px;
+    float: left;
+    
+}
+
+.CardLinkColumn1 {
+    position:relative;
+    border: 1px solid rgba(128, 128, 128, 0.5);
+    width: 240px;
+    height: 307px;
+    float: left;
+}
+
+.left{
+    margin-right: 16px;
+}
+
+.bottom{
+    margin-bottom: 14px;
+}
+
+.b {
+    position: absolute;
+    width: 42px;
+    height: 42px;
+    left: 20px;
+    top: 248px;
+    text-align: center;
+    opacity: 0.2;
+    background-color: gray;
+    color: white;
+}
+
+.CardLinkColumn1:hover, .CardLinkColumn2:hover, .CardLinkColumn1:focus, .CardLinkColumn2:focus{
+    border: 1px solid #0074E9;
+}
+
+.CardLinkColumn1:hover button.b, .CardLinkColumn1:focus button.b, .CardLinkColumn2:hover button.b, .CardLinkColumn2:focus button.b {
+    background-color: #0074E9;
+    border: 1px solid #0074E9;
+    opacity: 1;
+    width: 112px;
+    height: 42px;
+    transition: 0.1s;
+}  
+
+.CardLinkColumn1:hover button.b::before, .CardLinkColumn1:focus button.b::before, .CardLinkColumn2:hover button.b::before, .CardLinkColumn2:focus button.b::before{
+    content: "구매하기";
+    margin-right: 15px;
+}
