@@ -1,0 +1,222 @@
+
+/* Color, Typography */
+@import url("./theme.css");
+
+/* Reset, Base */
+@import url("./init/normalize.css");
+@import url("./init/base.css");
+
+/* Hidden Content, Easings */
+@import url("./common/a11y.css");
+@import url("./common/easings.css");
+
+/* Pages */
+@import url("./pages/offer.css");
+
+
+
+.logo{
+    position: absolute;
+    left: 147px;
+    top: 100px;
+    width: 176px;
+    height: 40px;
+}
+
+#offer {
+    position: absolute;
+    left: 145px;
+    top: 188px;
+    width: 1022px;
+    height: 354px;
+}
+
+.OfferHeadline {
+    position: absolute;
+    background-image: url(../assets/icon/shopping.svg);
+    background-repeat: no-repeat;
+    left: 0px;
+    top: -24px;
+    width: 234px;
+    height: 30px;
+    font-family: 'Noto Sans';
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 115%;
+}
+
+
+
+#ShoppingList{
+    background-color: aliceblue;
+    display:flex;
+    flex-direction: row;
+    padding: 0px;
+    gap: 5px;
+    position: absolute;
+    top: 54px;
+    left: 0px;
+    width: 1020px;
+    height: 270px;
+}
+
+.ProductCard {
+    width: 200px;
+    height: 270px;
+    background-color: #FFFFFF;
+
+}
+
+.ProductCard>.box{
+    position: relative;
+    width: 53px;
+    height: 30px;
+    background-color: #E52330;
+    color: white;
+    border-bottom-right-radius: 4px;
+    display : flex;
+    flex-direction: row;
+    align-items : flex-start;
+    padding: 3px 10px;
+    gap: 10px;
+    z-index: 100;
+}
+
+.product{
+    position: relative;
+    left: 0;
+    top: -15px;
+    width: 160px;
+    height: 160px;
+    margin: auto;
+    display: block;
+    z-index: 2;
+}
+
+.product2{
+    position: relative;
+    left: 0;
+    top: 14px;
+    width: 160px;
+    height: 160px;
+    margin: auto;
+    display: block;
+    z-index: 2;
+}
+
+
+.information {
+    position: relative;
+    width: 172px;
+    height: 46px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 12px;
+    left: 14px;
+    
+
+}
+
+.information2 {
+    position: relative;
+    top: 30px;
+    left: 14px;
+    width: 172px;
+    height: 46px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 12px;
+
+}
+
+.content {
+    width: 172px;
+    height: 17px;
+    font-family: 'Noto Sans';
+    color: #181818;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 120%;
+}
+
+.rocket {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 6px;
+
+    position: absolute;
+    width: 55px;
+    height: 16px;
+    left: 0px;
+    top: 41px;
+}
+
+.free {
+    position: absolute;
+    width: 52px;
+    height: 17px;
+    left: 0px;
+    top: 41px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 120%;
+
+    color: #767676;
+}
+
+.star_1 {
+    position: absolute;
+    top: -89px;
+    clip: rect(126px, 100px , 140px, 0);
+    float: left;
+}
+
+.star_2 {
+    position: absolute;
+    top: -68px;
+    clip: rect(126px, 100px , 140px, 0);
+    float: left;
+}
+
+.star_3 {
+    position: absolute;
+    top: -53px;
+    clip: rect(111px, 100px , 125px, 0);
+    float: left;
+}
+
+.star_4 {
+    position: absolute;
+    top: -81px;
+    clip: rect(140px, 100px , 154px, 0);
+    float: left;
+}
+
+.customer1{
+    font-family: 'Noto Sans';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 120%;
+    color: #767676;
+    position: relative;
+    left: 70px;
+    top: 4px;
+}
+
+.customer2{
+    font-family: 'Noto Sans';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 120%;
+    color: #767676;
+    position: relative;
+    left: 70px;
+    top: 27px;
+}
