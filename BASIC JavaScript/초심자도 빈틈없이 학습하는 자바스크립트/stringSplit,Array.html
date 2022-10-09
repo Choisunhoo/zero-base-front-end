@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let text1 = "Hello world ~!!";
+        let arr = text1.split(" ");
+
+        document.write("결과 값은 ??" +arr[0]+"<br>");
+        document.write("결과 값은 ??" +arr[1]+"<br>");
+        document.write("결과 값은 ??" +arr[2]+"<br>");
+        document.write("결과 값은 ?? " +arr.length+"<br>");
+        document.write("결과 타입은 ??" + typeof arr+"<br>");
+
+        let arr2 = Array.from(text1);
+        
+        document.write("결과 값은 ??" +arr2[0]+"<br>");
+        document.write("결과 값은 ??" +arr2[1]+"<br>");
+        document.write("결과 값은 ??" +arr2[2]+"<br>");
+        document.write("결과 값은 ??" +arr2[3]+"<br>");
+        document.write("결과 값은 ??" +arr2[4]+"<br>");
+        document.write("결과 값은 ?? " +arr2.length+"<br>");
+        document.write("결과 타입은 ??" + typeof arr2+"<br>");
+
+        let arr3 = [...text1];
+        document.write("결과 값은 ?? " +arr3+"<br>");
+        document.write("결과 타입은 ??" + typeof arr3+"<br>");
+    </script>
+    
+</body>
+</html>
