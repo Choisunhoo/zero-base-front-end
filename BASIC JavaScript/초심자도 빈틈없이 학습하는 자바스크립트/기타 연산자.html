@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <body>
+        <script>
+            const person = {
+                            firstName:"John",
+                            lastName: "Doe",
+                            age: 50,
+                            eyeColor: "blue",
+                        };
+            
+            document.write(person.age+"<br>");  // 50
+            
+            delete person.age;
+
+            document.write(person.age+"<br>");  // undefined
+
+            const cars = ["Saab", "Volvo", "BMQ"];
+            document.write("Saab" in cars); //false 
+            document.write(0 in cars); //true 
+            document.write(1 in cars); //true 
+            document.write(3 in cars); //false 
+
+            document.write("firstName" in person); // Returns true
+            document.write("age" in person); // Returns false
+
+            
+        </script>
+    </body>
+</html>
