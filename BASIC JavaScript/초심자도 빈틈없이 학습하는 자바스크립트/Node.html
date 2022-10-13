@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>제목</title>
+</head>
+<body>
+    <h1 id="title">DOM 문서구조</h1>
+    <ul>
+        <li><a href="https://www.google.com" id="link1">구글</a></li>
+        <li><a href="https://www.naver.com" id="link2">네이버</a></li>
+    </ul>
+
+    <script>
+        let tag = document.getElementById("title");
+        let str = "노드 타입 :::" + tag.nodeType + "<br>" +
+                "노드 이름 :::" + tag.nodeName + "<br>" +
+                "노드 값 :::" + tag.nodeValue + "<br>" + "<br>";
+        document.write(str);
+
+        let tag2 = document.getElementById("link1");
+        let str2 = "노드 타입 :::" + tag2.nodeType + "<br>" +
+                "노드 이름 :::" + tag2.nodeName + "<br>" +
+                "노드 값 :::" + tag2.nodeValue + "<br>" + "<br>";
+        document.write(str2);
+
+
+        let tag3 = document.getElementById("link2");
+        let str3 = "lastChild ::: " + tag.lastChild.nodeValue + "<br>" +
+                "parentNode ::: " + tag.parentNode.nodeName + "<br>" + "<br>";
+        document.write(str3);
+    </script>
+    
+</body>
+</html>
