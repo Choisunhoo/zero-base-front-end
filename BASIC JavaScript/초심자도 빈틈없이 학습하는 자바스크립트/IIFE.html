@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>제목</title>
+</head>
+<body>
+
+    <script>
+       var result = (function(num1, num2) {
+                            return num1 + num2;
+                        })(10, 20);
+        
+        document.write(result);
+
+        var result = ((num1, num2) => num1 + num2)(10, 20);
+
+        document.write(result);
+    </script>
+    
+</body>
+</html>
