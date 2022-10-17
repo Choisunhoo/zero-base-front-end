@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var jsonData = {
+            "name" : "김덕춘",
+            "age" : 73,
+            "gender" : "남",
+            "interests" : ["화투", "섹소폰"],
+            "family" : {"wife": "이순자", "daughter": "김춘자"},
+            "school" : null,
+            "graduate" : false,
+        };
+
+        //var jsData = JSON.parse(jsonData);
+        var jsData = JSON.stringify(jsonData);
+        console.log(jsData);
+    </script>
+</body>
+</html>
