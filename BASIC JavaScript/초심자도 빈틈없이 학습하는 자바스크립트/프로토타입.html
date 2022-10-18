@@ -8,17 +8,27 @@
 </head>
 <body>
     <script>
-        var arr1 = new Array("사과");
-        var arr2 = new Array("바나나");
-        var arr3 = new Array("수박");
+        // Info 생성자 함수
+        function Info(name, age) {
+            this.name = name;
+            this.age = age;
+        }
 
-        arr1.push("오랜지");
-        arr2.push("토마토");
-        arr3.push("딸기");
+        Info.prototype.write = function () {
+            console.log("이름은 \'"+this.name+"\', 나이는 \'"+this.age+"살\'입니다.");
+        }
 
-        console.log(arr1);
-        console.log(arr2);
-        console.log(arr3);
+        var info1 = new Info("홍길원", 31);
+        var info2 = new Info("홍길투", 32);
+        var info3 = new Info("홍길삼", 33);
+
+        info1.write();
+        info2.write();
+        info3.write();
+
+        console.log(info1);
+        console.log(info2);
+        console.log(info3);
     </script>
 </body>
 </html>
