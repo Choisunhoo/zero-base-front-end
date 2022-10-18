@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Info 생성자 함수
+        function Info(name, age) {
+            this.name = name;
+            this.age = age;
+        }
+
+        Info.prototype.write = function () {
+            console.log("이름은 \'"+this.name+"\', 나이는 \'"+this.age+"살\'입니다.");
+        }
+
+        var info1 = new Info("홍길원", 31);
+        var info2 = new Info("홍길투", 32);
+        var info3 = new Info("홍길삼", 33);
+
+        info1.write();
+        info2.write();
+        info3.write();
+
+        console.log(info1);
+        console.log(info2);
+        console.log(info3);
+    </script>
+</body>
+</html>
