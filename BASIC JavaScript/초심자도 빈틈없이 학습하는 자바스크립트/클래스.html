@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 클래스 생성
+        class Info {
+            constructor({name, age}) {
+                this.name = name;
+                this.age = age;
+            }
+
+            // getter, setter 사용시 _을 붙임
+            // getter
+            get name() {
+                return this._name;
+            }
+
+            // setter
+            set name(value) {
+                this._name = value;
+            }
+            
+            // 함수
+            write() {
+                return `이름은 ${this.name}, 나이는 ${this.age}, 살`;
+            }
+        }
+
+        // 클래스 선언
+        let info = new Info({name:"홍길원", age: 31});
+        console.log(info.name);
+
+        info.name = "홍길삼";
+        console.log(info.name);
+
+        // 클래스 생성 
+        class Info2 {
+            #privateValue = "50kg";  // 외부에서는 접근이 안됨
+            publicValue = "김덕춘";
+        }
+
+        let info2 = new Info2();
+        console.log(info2.privateValue);
+        console.log(info2.publicValue);
+    </script>
+</body>
+</html>
