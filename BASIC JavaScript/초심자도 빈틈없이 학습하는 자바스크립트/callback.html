@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 더하기 함수
+        function sum(num1, num2, callback) {
+            var result = num1 + num2;
+            callback(result);
+        }
+
+        // 더하기 함수 호출
+        sum(10, 20, function(result){
+            console.log(result);
+        })
+
+
+        function info(name, age, callback) {
+            var result = {
+                name: name,
+                age: age
+            }
+            callback(result);
+        }
+
+        function printName(result) {
+            console.log("이름은 "+result.name+" 입니다.");
+        }
+
+        function printAge(result) {
+            console.log("나이는 "+result.age+" 살 입니다.");
+        }
+
+        info("홍길원", 31, printName);
+        info("홍길원", 31, printAge);
+
+    </script>
+</body>
+</html>
