@@ -9,36 +9,38 @@
 <body>
     <script>
         // 더하기 함수
-        function sum(num1, num2, callback) {
-            var result = num1 + num2;
-            callback(result);
-        }
+        //function sum(num1, num2, callback) {
+        //    var result = num1 + num2;
+        //    callback(result);
+        //}
 
         // 더하기 함수 호출
-        sum(10, 20, function(result){
-            console.log(result);
-        })
+        //sum(10, 20, function(result){
+        //    console.log(result);
+        //})
 
-
-        function info(name, age, callback) {
-            var result = {
-                name: name,
-                age: age
-            }
-            callback(result);
+        // 더하기 함수 선언 
+        function sum(num1, num2, callback) {
+            return new Promise((resolve, reject) => {
+                resolve(num1 + num2);
+            });
         }
 
-        function printName(result) {
-            console.log("이름은 "+result.name+" 입니다.");
+        // 함수 호출 
+        sum(10, 20).then((result) => console.log(result));
+
+        function sum2(num1, num2) {
+            return new Promise((resolve, reject) => {
+                if(num1 == null || num2 == null) reject(new Error("num1 또는 num2 null 값"));
+                else resolve(num1 + num2);
+                // resolve(num1 + num2);
+            });
         }
 
-        function printAge(result) {
-            console.log("나이는 "+result.age+" 살 입니다.");
-        }
-
-        info("홍길원", 31, printName);
-        info("홍길원", 31, printAge);
-
+        sum2(10, 20)
+        // sum2(null, 20)
+            .then((result) => console.log("성공 ::: 결과는? "+result))
+            .catch((error) => console.log("실패 ::: "+error));
     </script>
 </body>
 </html>
