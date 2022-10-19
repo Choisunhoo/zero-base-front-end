@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Calc {
+
+            // 셍성자
+            constructor(num1, num2) {
+                this.num1 = num1;
+                this.num2 = num2;
+                this.result = 0;
+            }
+
+            // 더하기 함수
+            sum() {
+                this.result = this.num1 + this.num2
+                return this.result;
+            }
+
+            // 빼기 함수
+            subs(){
+
+                // 조건문 
+                if(this.num1 >= this.num2) {
+                    this.result = this.num1 - this.num2;
+                } else {
+                    this.result = this.num2 - this.num1;
+                }
+                // 삼항연산자
+                // this.result = ((this.num1 >= this.num2) ? this.num1 - this.num2 : this.num2 - this.num1);
+                return this.result;
+            }
+
+            write() {
+                return this.result;
+            }
+        }
+
+        // 클래스 Calc에 있는 클래스를 상속 받음
+        class Result extends Calc {
+            
+            sum(){
+                super.sum();
+            }
+
+            subs(){
+                super.subs();
+            }
+
+            // 메소드 오버라이딩
+            write(){
+                return "결과는?? " + this.result;
+            }
+        }
+
+        //부모 Class
+        let calc = new Calc(10, 20);
+        calc.subs();
+        console.log(calc.write());
+
+        // 자식 Class
+        let result = new Result(10, 20);
+        result.sum();
+        console.log(result.write());
+        
+    </script>
+</body>
+</html>
