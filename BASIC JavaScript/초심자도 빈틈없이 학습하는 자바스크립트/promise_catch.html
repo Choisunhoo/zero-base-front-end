@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const promise1 = new Promise((resolve, reject) => {
+            throw 'Uh-oh!';
+        });
+
+        promise1.catch((error) => {
+            console.error(error);
+        })
+
+        const promise2 = new Promise((resolve, reject) => {
+            reject("거절! ");
+        });
+
+        promise2.then(result => {
+            console.log(result)
+        });
+
+
+        const promise3 = new Promise((resolve, reject) => {
+            reject("거절! ");
+        });
+
+        promise3.then(result => {
+            console.log(result)
+        }).catch(error => {
+            console.log(error);
+        });
+
+    </script>
+</body>
+</html>
