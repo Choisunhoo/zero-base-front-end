@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function fnTest(){
+            return "test~";
+        }
+
+        async function testPromise() {       // 1. 동기 처리
+            try {
+                const test = await fnTest(); // 2.처리 기다림
+                console.log(test);           // 3.처리 후 실행 코드
+            } catch(e) {
+                console.log(e);
+            }
+        }
+
+        testPromise();
+
+
+        const sum1 = (num1, num2) => {
+            const promiseTest = new Promise((resolve, reject) => {
+                if (num1 > num2) resolve(num1 - num2);
+                else resolve(num2 - num1);
+            });
+            return promiseTest
+        }
+
+        sum1(10, 20).then(data => {
+            console.log(data);
+        }). catch(error => {
+            console.log(error);
+        });
+
+        const sum2 = async (num1, num2) => {
+            const promise = new Promise((resolve, reject) => {
+                if (num1 > num2) resolve(num1 - num2);
+                else resolve(num2 - num1);
+            });
+            
+            try {
+                const result = await promise;
+                console.log(result);
+            }catch(error){
+                console.error(error);
+            }
+        }
+
+        sum2(10, 20);
+
+
+        function subtraction(num1, num2) {
+            const promiseTest = new Promise((resolve, reject) => {
+                if (num1 > num2) resolve(num1 - num2);
+                else resolve(num2 - num1);
+            });
+            return promiseTest;
+        }
+
+        //promise
+        function promiseTest(){
+            return subtraction(10, 20)
+            .then(result => {
+                if (result < 0) {
+                    return subtraction(10, 20)
+                    .then(result2 => {
+                        console.log(result2);
+                    });
+                } else {
+                    console.log(result);
+                }
+            });
+        }
+
+        promiseTest();
+
+        //async await
+        async function promiseAsyncAwait() {
+            const result = await subtraction(10, 20);
+            if (result < 0) {
+                const result2 = awaitsubtraction(20, 10);
+                console.log(result2);
+            }else{
+                console.log(result);
+            }
+        }
+
+        promiseAsyncAwait();
+    </script>
+</body>
+</html>
