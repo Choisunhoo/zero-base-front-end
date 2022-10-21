@@ -7,28 +7,16 @@
     <title>Document</title>
 </head>
 <body>
-    <button type = "button" id="btnSave" onclick = "fnSave();">저장</button>
-
-    <input type="text" id="focusTest1" onchange="fnChangeBg();"/>
-    <button type = "button" id="btnFocus" onclick = "fnFocusOn();">포커스On</button>
-    <button type = "button" id="btnFocus" onclick = "fnFocusOff();">포커스Off</button>
-
+    <button type = "button" id="btn">클릭</button>
 
     <script>
-        function fnSave(){
-            alert("저장 되었습니다!");
-        }
+        var btn = document.getElementById("btn");
+        btn.addEventListener("click", btnClickEvent);
 
-        function fnFocusOn(){
-            document.getElementById("focusTest1").focus();
-        }
-
-        function fnFocusOff(){
-            document.getElementById("focusTest1").blur();
-        }
-
-        function fnChangeBg(){
-            document.getElementById("focusTest1").style.backgroundColor = "yellow";
+        function btnClickEvent(e){
+            console.log(e);
+            console.log(e.target);
+            console.log(e.currentTarget);
         }
     </script>
 
