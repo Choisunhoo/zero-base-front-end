@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function printFunc(name) {
+            this._browser = name;
+        }
+        printFunc.prototype.print = function() {
+            console.log(this._browser);
+        }
+
+        var browser1 = new printFunc("크롬");
+        var browser2 = new printFunc("웨일");
+
+        browser1.print();
+        browser2.print();
+
+        browser1._browser = "모질라"; // 쉽게 접근 가능
+        browser1.print();
+
+
+        // 은닉화 
+        function printFunc2(name) {
+            var _browser = name;
+            function print(){
+                console.log(_browser);
+            }
+            return print;
+        }
+
+        var browser3 = new printFunc2("크롬");
+        var browser4 = new printFunc2("웨일");
+
+        browser3();
+        browser4();
+    </script>
+</body>
+</html>
