@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="div_first">div_first
+        <div class="div_second">div_second
+            <div class="div_third">div_third</div>
+        </div>
+    </div>
+
+    <script>
+        const capts = document.querySelectorAll("div");
+
+        capts.forEach(function(div){
+            div.addEventListener("click", fnBubbling, {
+                capture: false
+            });
+        });
+
+        function fnBubbling(event){
+            console.log(event.currentTarget.className);
+        }
+
+        
+
+    </script>
+
+
+</body>
+</html>
