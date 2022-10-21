@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="divArea">
+        <span id="spanArea">
+            <button type="button" id="btn">클릭</button>
+        </span>
+    </div>
+
+    <script>
+        const divArea = document.getElementById("divArea")
+        const spanArea = document.getElementById("spanArea")
+        const btn = document.getElementById("btn")
+
+        divArea.addEventListener("click", fnDivArea);
+        spanArea.addEventListener("click", fnSpanArea);
+        btn.addEventListener("click", fnBtnArea);
+
+        function fnDivArea(event){
+            event.stopPropagation();
+            alert('div 영역!!! ');
+        }
+
+        function fnSpanArea(event){
+            event.stopPropagation();
+            alert('Span 영역!!! ');
+        }
+
+        function fnBtnArea(event){
+            event.stopPropagation();
+            alert('btn 영역!!! ');
+        }
+
+    </script>
+
+
+</body>
+</html>
