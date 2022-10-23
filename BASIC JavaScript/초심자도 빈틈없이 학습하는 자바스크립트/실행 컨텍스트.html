@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        var str ="전역 컨텍스트"; // 전역 컨택스트
+        function fnOuter() {  // outer 컨텍스트
+            function fnInner() { // inner 컨택스트
+                var str = "내부변수";
+                console.log(str); // 내부 변수
+            }
+            fnInner();
+            console.log(str); // 전역 컨택스트
+        }
+        fnOuter();
+        console.log(str); // 전역 컨택스트
+    </script>
+
+
+</body>
+</html>
